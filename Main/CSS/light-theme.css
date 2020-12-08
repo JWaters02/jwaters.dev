@@ -4,14 +4,16 @@
 */
 :root {
     --button-colour: #61892f; /* dark-lime-green | white */
-    --nav-colour: #1b1e20;
+    --nav-colour: #61892f;
     --border-colour: #26282a; /* even-darker-lime-green | gray */
-    --hero-text-colour: #86c232; /* bright-yellow-green | bright-yellow-green */
-    --text-colour: #26282a; /* light-yellow-green | light-yellow-green */
-    --link-colour: #4e43e0; /* lighter-yellow-green | purple */
-    --background-colour: #92b976; /* almost-black | white */
+    --hero-text-colour: #26282a; /* bright-yellow-green | bright-yellow-green */
+    --text-colour: #fff; /* light-yellow-green | light-yellow-green */
+    --link-colour: #000; /* lighter-yellow-green | purple */
+    --background-colour: #f4ffec; /* almost-black | white */
     --flex-background-colour: #61892f; /* gray | almost-white */ 
+    --table-zebra-colour: #445f22;
     --button-text-colour: #fff; /* white | black */
+    --nav-hover-colour: #1b1e20;
     --nav-text-colour: #92b976;
     --hero-image-top-gradient: rgba(0, 0, 0, 0.5); /* black-semi-transparent */
     --hero-image-bottom-gradient: rgba(0, 0, 0, 0.25); /* black-quarter-transparent */
@@ -81,6 +83,10 @@ body, html {
 .hero-button-link {
     color: var(--button-text-colour);
 }
+.hero-button-display-block {
+    display: inline-block;
+    padding: 10px 10px;
+}
 
 /* Sets up the nav bar used for auto-scrolling down the page */
 ul {
@@ -105,7 +111,7 @@ li a {
     color: var(--button-text-colour);
 }
 li a:hover {
-    background-color: var(--background-colour);
+    background-color: var(--nav-hover-colour);
 }
 
 /* Sets up the vertical flex container for about me section */
@@ -196,7 +202,7 @@ table {
     border-spacing: 5px;
     width: 100%;
     padding: 5px;
-    border: 1px solid var(--border-colour);
+    border: none;
 }
 th, td {
     text-align: left;
@@ -204,7 +210,7 @@ th, td {
 }
 /* Adds the "zebra table" effect */
 tr:nth-child(odd) {
-    background-color: var(--background-colour);
+    background-color: var(--table-zebra-colour);
 }
 
 /* Sets up the socials columns */
@@ -222,7 +228,7 @@ tr:nth-child(odd) {
 .footer {
     width: 100%;
     background-color: var(--background-colour);
-    color:var(--text-colour);
+    color:var(--link-colour);
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
