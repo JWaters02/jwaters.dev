@@ -22,9 +22,6 @@
                 <div class="hero-button hero-button-hover">
                     <a class="hero-button-link" href="socials.html">Socials</a>
                 </div>
-                <div class="hero-button hero-button-hover">
-                    <a class="hero-button-link" href="cpd.html">CPD</a>
-                </div>
             </div>
         </div>
         <!-- This is a page link for the navbar to link to, allows automatic scrolling to that element -->
@@ -33,6 +30,7 @@
         <div class="nav-bar">
             <ul>
                 <li class="float-left"><a href="#about-me">About Me</a></li>
+                <li class="float-left"><a href="#projects">Projects</a></li>
                 <li class="float-left"><a href="#bottom">Page Bottom</a></li>
                 <li class="float-right"><a href="#" class="btn-toggle">Toggle Theme</a></li>
             </ul>
@@ -60,8 +58,14 @@
                         <p>
                             2018 - 2019<br>Working in an office environment, at first doing odd-jobs like data entry and donation counting. Eventually I moved to automating all of the charity shops' income system into a central (Excel :-) ) database, using macros programmed in Visual Basic.
                         </p>
+                        <h3>Continued Progressional Development <i class="fa fa-briefcase" aria-hidden="true"></i></h3>
+                        <p>
+                            2020 - 2021<br>Attending various extracurricular events and talks during university. 
+                        </p>
                         <h3>Stratford upon Avon Guide Dogs <i class="fa fa-briefcase" aria-hidden="true"></i></h3>
-                        <p>2016 - 2017<br>Creating event posters.</p>
+                        <p>
+                            2016 - 2017<br>Creating event posters.
+                        </p>
                         <h3>School Student-lead Technical Crew <i class="fa fa-briefcase" aria-hidden="true"></i></h3>
                         <p>
                             2013 - 2019<br>Rigging the lighting and programming the lighting board & setting up sound board, in a professional manner, for school events. <a class="link" href="https://imgur.com/a/NWk8Mun" target="_blank">Some images of this.</a>
@@ -77,6 +81,61 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <a id="projects"></a>
+                <h1>Projects</h1>
+                <div class="slideshow-container">
+                    <div class="slides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="./Images/Slideshow/AoC2020-Day10.png" style="width:50">
+                    </div>
+                    <div class="slides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="./Images//Slideshow/Backfire-Logo.png" style="width:50%">
+                    </div>
+                    <div class="slides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="img_mountains_wide.jpg" style="width:100%">
+                    </div>
+                    <div class="slides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="img_lights_wide.jpg" style="width:100%">
+                    </div>
+                    <div class="slides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="img_nature_wide.jpg" style="width:100%">
+                    </div>
+                    <div class="slides">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="img_snow_wide.jpg" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="./Images/Slideshow/AoC2020-Day10.png" style="width:100%" onclick="currentSlide(1)" alt="Advent of Code 2020">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./Images//Slideshow/Backfire-Logo.png" style="width:100%" onclick="currentSlide(2)" alt="Backfire Game">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                        </div>    
+                        <div class="column">
+                            <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- This is a page link for the navbar to link to, allows automatic scrolling to that element -->
         <a id="bottom"></a>
@@ -88,8 +147,9 @@
         </div>
         <!-- Sets up footer part of page -->
         <div class="footer">
-            <p>Personal Email: watersjoshua2002@gmail.com<br>University Email: N0916167@my.ntu.ac.uk<br>Website email: admin@jwaters.dev</p>
+            <p>Personal Email: watersjoshua2002@gmail.com<br>Website email: admin@jwaters.dev</p>
         </div>
-        <script src="./Scripts/scripts.js"></script>
+        <script src="./Scripts/toggleTheme.js"></script>
+        <script src="./Scripts/projectsSlideshow.js"></script>
     </body>
 </html>
