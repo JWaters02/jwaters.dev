@@ -216,7 +216,6 @@ tr:nth-child(odd) {
     color: var(--button-colour);
 }
 
-
 /* Position the image container (needed to position the left and right arrows) */
 .slideshow-container {
     position: relative;
@@ -263,10 +262,10 @@ tr:nth-child(odd) {
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
-    padding: 8px 0px;
+    padding: 0px 0px;
     position: absolute;
-    top: 0;
-    left: 50%;
+    top: 1%;
+    left: 17%;
 }
 /* Container for image text */
 .caption-container {
@@ -275,31 +274,24 @@ tr:nth-child(odd) {
     padding: 2px 16px;
     color: var(--link-colour);
 }
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
 /* Six columns side by side */
 .column {
     float: left;
     width: 16.66%;
 }
-
 /* Add a transparency effect for thumnbail images */
 .demo {
     opacity: 0.6;
 }
-
 .active,
 .demo:hover {
     opacity: 1;
 }
-
-
-
 
 /* Sets up the page footer */
 .footer {

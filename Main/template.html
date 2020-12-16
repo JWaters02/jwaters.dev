@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link rel="stylesheet" href="./CSS/dark-theme.css" id="theme-link">
+        <!-- Importing the Font Awesome V4 Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Template</title>
+        <!-- Favicon taken from https://favicon.io/-->
+        <link rel="icon" type="image/png" href="./Images/favicon-home.png"/>
+    </head>
+    <body>
+        <!-- Hero image and text section -->
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>Template</h1>
+                <div class="hero-button hero-button-hover">
+                    <a class="hero-button-link" href="index.html">Home</a>
+                </div>
+            </div>
+        </div>
+        <!-- This is a page link for the navbar to link to, allows automatic scrolling to that element -->
+        <a id="section1"></a>
+        <!-- Sets up nav bar to automatically scroll to elements on the page -->
+        <div class="nav-bar">
+            <ul>
+                <li class="float-left"><a href="#section1">Section 1</a></li>
+                <li class="float-left"><a href="#section2">Section 2</a></li>
+                <li class="float-left"><a href="#bottom">Page Bottom</a></li>
+            </ul>
+        </div>
+        <!-- Sets up the vertical flex container for each section -->
+        <div class="flex-container-vertical">
+            <div>
+                <h1>Section 1</h1>
+            </div>
+            <div>
+                <a id="section2"></a>
+                <h1>Section 2</h1>
+            </div>
+        </div>
+        <!-- This is a page link for the navbar to link to, allows automatic scrolling to that element -->
+        <a id="bottom"></a>
+        <!-- Sets up nav bar to automatically scroll to the top of the page -->
+        <div class="nav-bar">
+            <ul>
+                <li class="float-left"><a href="#">Back to Top</a></li>
+            </ul>
+        </div>
+        <!-- Sets up footer part of page -->
+        <div class="footer">
+            <p>Personal Email: watersjoshua2002@gmail.com<br>Website email: admin@jwaters.dev</p>
+        </div>
+        <script src="./Scripts/getTheme.js"></script>
+    </body>
+</html>
