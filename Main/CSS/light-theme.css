@@ -4,7 +4,7 @@
 */
 :root {
     --button-colour: #61892f; /* dark-lime-green | white */
-    --nav-colour: #61892f;
+    --nav-colour: #26282a;
     --border-colour: #26282a; /* even-darker-lime-green | gray */
     --hero-text-colour: #26282a; /* bright-yellow-green | bright-yellow-green */
     --text-colour: #fff; /* light-yellow-green | light-yellow-green */
@@ -15,6 +15,7 @@
     --button-text-colour: #fff; /* white | black */
     --nav-hover-colour: #1b1e20;
     --nav-text-colour: #92b976;
+    --footer-colour: #26282a;
     --hero-image-top-gradient: rgba(0, 0, 0, 0.5); /* black-semi-transparent */
     --hero-image-bottom-gradient: rgba(0, 0, 0, 0.25); /* black-quarter-transparent */
     --hero-button-hover: rgba(110, 110, 110, 0.25); /* half-black */
@@ -113,6 +114,9 @@ li a {
 li a:hover {
     background-color: var(--nav-hover-colour);
 }
+.theme-btn:hover {
+    cursor: pointer;
+}
 
 /* Sets up the vertical flex container for about me section */
 .flex-container-vertical {
@@ -166,7 +170,7 @@ li a:hover {
     padding-inline-end: 30%;
 }
 /* These are CPD Report section */
-.devsoc {
+.long-text {
     text-align: left;
     padding-left: 20px;
     padding-inline-end: 0%;
@@ -224,12 +228,90 @@ tr:nth-child(odd) {
     color: var(--button-colour);
 }
 
+/* Position the image container (needed to position the left and right arrows) */
+.slideshow-container {
+    position: relative;
+}
+/* Hide the images by default */
+.slides {
+    display: none;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* Position the "prev button" to the left */
+.prev {
+    left: 0;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 0px 0px;
+    position: absolute;
+    top: 1%;
+    left: 17%;
+}
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: var(--nav-colour);
+    padding: 2px 16px;
+    color: var(--link-colour);
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
 /* Sets up the page footer */
 .footer {
     width: 100%;
-    background-color: var(--background-colour);
-    color:var(--link-colour);
+    background-color: var(--footer-colour);
+    color:var(--text-colour);
     text-align: center;
+    margin-top: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
 }

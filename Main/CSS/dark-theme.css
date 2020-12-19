@@ -11,6 +11,7 @@
     --background-colour: #1b1e20; /* almost-black | white */
     --flex-background-colour: #26282a; /* gray | almost-white */ 
     --button-text-colour: #fff; /* white | black */
+    --footer-colour: #26282a;
     --hero-image-top-gradient: rgba(0, 0, 0, 0.5); /* black-semi-transparent */
     --hero-image-bottom-gradient: rgba(0, 0, 0, 0.25); /* black-quarter-transparent */
     --hero-button-hover: rgba(110, 110, 110, 0.25); /* half-black */
@@ -105,6 +106,9 @@ li a {
 li a:hover {
     background-color: var(--background-colour);
 }
+.theme-btn:hover {
+    cursor: pointer;
+}
 
 /* Sets up the vertical flex container for about me section */
 .flex-container-vertical {
@@ -158,7 +162,7 @@ li a:hover {
     padding-inline-end: 30%;
 }
 /* These are CPD Report section */
-.devsoc {
+.long-text {
     text-align: left;
     padding-left: 20px;
     padding-inline-end: 0%;
@@ -296,9 +300,10 @@ tr:nth-child(odd) {
 /* Sets up the page footer */
 .footer {
     width: 100%;
-    background-color: var(--background-colour);
+    background-color: var(--footer-colour);
     color:var(--text-colour);
     text-align: center;
+    margin-top: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
