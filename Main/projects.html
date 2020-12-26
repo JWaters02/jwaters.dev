@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Projects</title>
         <!-- Favicon taken from https://favicon.io/-->
-        <link rel="icon" type="image/png" href="./Images/favicon-home.png"/>
+        <link rel="icon" type="image/png" href="./Images/favicon-projects.png"/>
     </head>
     <body>
         <!-- Hero image and text section -->
@@ -31,6 +31,7 @@
                 <li class="float-left"><a href="#haiku">Haiku</a></li>
                 <li class="float-left"><a href="#bobbybot">BobbyBot</a></li>
                 <li class="float-left"><a href="#bottom">Page Bottom</a></li>
+                <li class="float-right"><a class="theme-btn" onclick="toggleTheme()">Toggle Theme</a></li>
             </ul>
         </div>
         <!-- Sets up the vertical flex container for each section -->
@@ -130,18 +131,59 @@
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2>What is this for?</h2>
                         <p>
-                            
+                            This is the project that I chose to take on for my University's Term 1 Python Project. The projects could be anything of sensible scope. I chose this project because I wanted to do something mentally challenging that would solve an actual problem (and I didn't want to do a text-based adventure game that half the year was doing).
+                        </p>
+                        <h2>What does it do?</h2>
+                        <p>
+                            For another course module, I noticed that there weren't any online Boolean Expression Simplfiers that produced the Sum of Products (SOP) simplification. Therefore, I set out to create a solution that would not only solve this, but also be quick given many, many variables. This was especially important, given that the typical method to obtain a SOP simplification is through <a class="link" href="https://en.wikipedia.org/wiki/Karnaugh_map" target="_blank">Karnaugh maps</a> which is simple for a human to visualise and work through, but is terribly inefficient after 5 or 6 variables. Because I wanted my program to work for 10 or 20 variables, I had to use the <a class="link" href="https://en.wikipedia.org/wiki/Quine%E2%80%93McCluskey_algorithm" target="_blank"> Quine-McCluskey algorithm</a>. I also used <a class="link" href="https://en.wikipedia.org/wiki/Petrick%27s_method" target="_blank">Petrick's method</a> for further SOP simplification.
+                        </p>
+                        <h2>How does it work?</h2>
+                        <p>
+                            First, the user must input their expression of choice.
+                            <br>
+                            <img src="./Images/Projects/BESConsole.png" alt="BES Console" style="width: 50%;">
+                            <br>
+                            The program supports 4 different tokens per operation, and three operations, as you can see in the image above. They can be used interchangably. The variables don't just have to be single letters - they can be any words or digits as long as there is no space seperating them (otherwise they would cause a parse error).
+                            <br>
+                            <br>
+                            Then, the program will parse the expression into an <a class="link" href="https://en.wikipedia.org/wiki/Abstract_syntax_tree" target="_blank">Abstract Syntax Tree</a> (AST) that the rest of the program can then read.
+                            <br>
+                            <img src="./Images/Projects/BES AST.png" alt="BES AST Diagram" style="width: 30%;">
+                            <br>
+                            In order to carry out the QM algorithm, the program must then work out the context of the variables in the truth table and whether or not each row is True or False. Using this truth table generated from the expression, the program can then generate the required minterms (prime implicants) to be grouped through the algorithm. The algorithm is then run on the minterms to work out the essential prime implicants, Petrick's method is applied to further reduce these, and the output is produced.
                         </p>
                     </div>
                 </div>
             </div>
             <div>
                 <a id="website"></a>
-                <h1>My Personal Website</h1>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> My Personal Website</h1>
+                <div ckass="display-block">
+                    <div class="long-text" style="line-height: 2; margin-right: 5px;">
+                        <h2>This Website?</h2>
+                        <p>
+                            Yes. I created this originally for my University's Term 1 Web Dev project, but I decided that I liked the layout and kept building upon it. At the time of writing this section, I chose to complete the website and all the features I currently wanted, within just basic HTML/CSS/JS. However, in the future, I would like to use frameworks, probably React + Styled Components. If you are interested in the code used for this website, everything is <a class="link" href="https://github.com/JWaters02/jwaters.dev" target="_blank">open-source</a>.
+                            <br>
+                            <img src="./Images/Projects/Website Code.png" alt="Website Code" style="width: 50%;">
+                        </p>
+                    </div>
+                </div>
             </div>
             <div>
                 <a id="haiku"></a>
-                <h1>Haiku Generator</h1>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> Haiku Generator</h1>
+                <div ckass="display-block">
+                    <div class="long-text" style="line-height: 2; margin-right: 5px;">
+                        <h2>What is a Haiku?</h2>
+                        <p>
+                            Haikus are a type of poetry, originally from Japan. They must contain 17 (Japanese) syllables over 3 lines, in a 5-7-5 pattern.
+                        </p>
+                        <h2>How does the generator work?</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
             </div>
             <div>
                 <a id="bobbybot"></a>
