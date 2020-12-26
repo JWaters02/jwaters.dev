@@ -30,6 +30,7 @@
                 <li class="float-left"><a href="#website">Website</a></li>
                 <li class="float-left"><a href="#haiku">Haiku</a></li>
                 <li class="float-left"><a href="#bobbybot">BobbyBot</a></li>
+                <!-- <li class="float-left"><a href="#bobbybot">AL Coursework</a></li> -->
                 <li class="float-left"><a href="#bottom">Page Bottom</a></li>
                 <li class="float-right"><a class="theme-btn" onclick="toggleTheme()">Toggle Theme</a></li>
             </ul>
@@ -117,7 +118,7 @@
                             <br>
                             We decided on a top-down view, and the levels would be simple to get through - just kill all the enemies and reach the goal under a certain amount of time, without being hit by one of your own or an enemy's bullets. This ended up being quite fun. We had another of our friends make the music (he is very talented, <a class="link" href="https://musescore.com/exhop" target="_blank">go check him out</a>) and another friend make the art for the main menu, level tiles, bullet, goal and character/enemy models. Overall there were 4 of us working on the project; Me and Daman56100 on programming, Senor_Saas on art & programming, and Evan on music. We all went to the same school. You can watch a short demo of me playing it here:
                             <br>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Xq3MTjVyKGI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="yt-embed" src="https://www.youtube.com/embed/Xq3MTjVyKGI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <br>
                             You can view the GMTK submission page for the game <a class="link" href="https://itch.io/jam/gmtk-2020/rate/699722" target="_blank">here</a>, or the main game page <a class="link" href="https://daman56100.itch.io/backfire" target="_blank">here</a> (only downloadable for Windows... sorry Linux users. We tried to get a WebGL version working but couldn't get the resolutions right). Overall, we placed <strong>605th</strong> out of <strong>5,300</strong> submissions! I think that was a very good result given our lack of experience making games.
                         </p>
@@ -180,15 +181,53 @@
                         </p>
                         <h2>How does the generator work?</h2>
                         <p>
-                            
+                            <a class="link" href="https://github.com/JWaters02/HaikuGenerator" target="_blank">The program</a> takes in 4 inputs; 2 nouns, an adjective and a verb. The program will then use these words alongside a word bank to create the poem. Every poem generated, even with the same set of words will be different (unless you get lucky and see the exact same one twice in a row, but given the number of words to pick from those chances are very low.) The program will also automatically replace your words with words from the word bank if your word is too many syllables for the line. It will also try to keep to 17 (Japanese) syllables although is not yet perfect.
+                            <br>
+                            <img src="./Images/Projects/HaikuEx.png" alt="Haiku Example" style="width: 30%;">
+                            <br>
+                            Ok... it isn't perfect... :)
                         </p>
                     </div>
                 </div>
             </div>
             <div>
                 <a id="bobbybot"></a>
-                <h1>Discord Bot - BobbyBot</h1>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> BobbyBot</h1>
+                <div ckass="display-block">
+                    <div class="long-text" style="line-height: 2; margin-right: 5px;">
+                        <h2>What is BobbyBot for?</h2>
+                        <p>
+                            BobbyBot is a small little bot for Discord I made in 2018. Coded in JS using discord.js, it's small and only offers a few useless but perhaps fun (for 5 minutes) commands. I used it to teach me JavaScript, JSON parsing (for the weather checker) and so I could get in on the useless Discord bot action.
+                            <br>
+                            <img src="./Images/Projects/BobbyBot Maths.png" alt="BobbyBot Maths" style="width: 50%;">
+                            <br>
+                            Useless commands include:
+                            <ol>
+                                <li>Ping checker</li>
+                                <li>Coin flipper</li>
+                                <li>Checks users' roles</li>
+                                <li>Checks users' avatar and profile info</li>
+                                <li>Weather checker</li>
+                                <li>Multiply any lengths of ints or floats together</li>
+                                <li>A super duper secret command</li>
+                                <li>A half working, half broken music player</li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
             </div>
+            <!-- <div>
+                <a id="coursework"></a>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> A-Level Coursework</h1>
+                <div ckass="display-block">
+                    <div class="long-text" style="line-height: 2; margin-right: 5px;">
+                        <h2></h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div> -->
         </div>
         <!-- This is a page link for the navbar to link to, allows automatic scrolling to that element -->
         <a id="bottom"></a>

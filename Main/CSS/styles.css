@@ -190,10 +190,24 @@ li a:hover {
     color: var(--text-colour);
     line-height: 75px;
 }
-/* If the width of the page is too small, change the .flex-container-horizontal to .flex-container-vertical*/
+/* If the width of the page is too small*/
 @media (max-width: 850px) {
+    /* Change the .flex-container-horizontal to .flex-container-vertical */
     .flex-container-horizontal {
         flex-direction: column;
+    }
+}
+
+/* YouTube embed size */
+.yt-embed {
+    width: 560px;
+    height: 315px;
+}
+/* If the width of the page is too small*/
+@media (max-width: 600px) {
+    /* Reduce the video embed size */
+    .yt-embed {
+        width: 440px;
     }
 }
 
