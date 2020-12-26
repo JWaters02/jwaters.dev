@@ -5,13 +5,13 @@
 :root {
     --button-colour: #61892f; /* dark-lime-green | white */
     --nav-colour: #26282a;
-    --border-colour: #26282a; /* even-darker-lime-green | gray */
-    --hero-text-colour: #26282a; /* bright-yellow-green | bright-yellow-green */
-    --text-colour: #fff; /* light-yellow-green | light-yellow-green */
-    --link-colour: #fff; /* lighter-yellow-green | purple */
-    --background-colour: #f4ffec; /* almost-black | white */
-    --flex-background-colour: #61892f; /* gray | almost-white */ 
-    --table-zebra-colour: #445f22;
+    --border-colour: #517428; /* even-darker-lime-green | gray */
+    --hero-text-colour: #86c232; /* bright-yellow-green | bright-yellow-green */
+    --text-colour: #7ca361; /* light-yellow-green | light-yellow-green */
+    --link-colour: #92b976; /* lighter-yellow-green | purple */
+    --background-colour: #1b1e20; /* almost-black | white */
+    --flex-background-colour: #26282a; /* gray | almost-white */ 
+    --table-zebra-colour: #1b1e20;
     --button-text-colour: #fff; /* white | black */
     --nav-hover-colour: #1b1e20;
     --nav-text-colour: #92b976;
