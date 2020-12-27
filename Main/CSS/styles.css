@@ -218,7 +218,7 @@ table {
     border-spacing: 5px;
     width: 100%;
     padding: 5px;
-    border: 1px solid var(--border-colour);
+    border: none;
 }
 th, td {
     text-align: left;
@@ -305,6 +305,7 @@ tr:nth-child(odd) {
 }
 /* Six columns side by side */
 .column {
+    background-color: #222;
     float: left;
     width: 16.66%;
 }

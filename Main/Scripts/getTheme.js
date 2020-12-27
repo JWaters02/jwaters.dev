@@ -1,17 +1,16 @@
 const onThemeUpdated = (theme) => {
-	console.log('Updated theme to: ${theme}');
     let root = document.documentElement;
     if (theme === 'dark') {
         // Change to light theme vars
-        root.style.setProperty('--button-colour', '#61892f')
+        root.style.setProperty('--button-colour', '#45641f')
         root.style.setProperty('--nav-colour', '#26282a')
         root.style.setProperty('--border-colour', '#26282a')
         root.style.setProperty('--hero-text-colour', '#26282a')
         root.style.setProperty('--text-colour', '#fff')
         root.style.setProperty('--link-colour', '#fff')
         root.style.setProperty('--background-colour', '#f4ffec')
-        root.style.setProperty('--flex-background-colour', '#61892f')
-        root.style.setProperty('--table-zebra-colour', '#445f22')
+        root.style.setProperty('--flex-background-colour', '#45641f')
+        root.style.setProperty('--table-zebra-colour', '#354b1b')
         root.style.setProperty('--button-text-colour', '#fff')
         root.style.setProperty('--nav-hover-colour', '#1b1e20')
         root.style.setProperty('--nav-test-colour', '#92b976')
