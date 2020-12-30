@@ -122,12 +122,13 @@ li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px 50px 20px 50px;
 }
 /* Sets alignment for each section of vertical flex container*/
 .flex-container-vertical > div {
     background-color: var(--flex-background-colour);
     width: 100%;
-    margin: 5px;
+    margin: 10px;
     text-align: center;
     color: var(--text-colour);
 }
