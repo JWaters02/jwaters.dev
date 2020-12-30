@@ -132,6 +132,16 @@ li a:hover {
     text-align: center;
     color: var(--text-colour);
 }
+/* If the width of the page is too small*/
+@media (max-width: 800px) {
+    /* Remove the padding to unsquish the text */
+    .flex-container-vertical {
+        padding: 0px 0px 0px 0px;
+    }
+    .flex-container-vertical > div {
+        margin: 10px;
+    }
+}
 
 /* Sets up display for about me/CPD Report sections */
 .display-block {
