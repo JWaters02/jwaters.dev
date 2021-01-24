@@ -149,6 +149,12 @@ li a:hover {
     width: 100%;
     line-height: 2;
     overflow-wrap: break-word;
+    margin-right: 5px;
+}
+.long-text {
+    text-align: left;
+    padding-left: 20px;
+    padding-inline-end: 0%;
 }
 /* Sets up the floating alignment for each subsection */
 /* These are with about me section */
@@ -179,12 +185,6 @@ li a:hover {
     padding-inline-end: 30%;
 }
 /* These are CPD Report section */
-.long-text {
-    text-align: left;
-    padding-left: 20px;
-    padding-inline-end: 0%;
-}
-
 /* Sets up the flex container (horizontally) */
 .flex-container-horizontal {
     display: flex;
@@ -230,6 +230,9 @@ table {
     width: 100%;
     padding: 5px;
     border: none;
+}
+.b {
+    width: 50% !important; 
 }
 th, td {
     text-align: left;

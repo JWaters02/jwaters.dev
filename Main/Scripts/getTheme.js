@@ -16,7 +16,11 @@ const onThemeUpdated = (theme) => {
         root.style.setProperty('--nav-test-colour', '#92b976')
         root.style.setProperty('--footer-colour', '#26282a')
 
-        root.style.setProperty('--hero-image-background', 'url("../Images/csharpbackground2light.png")')
+        if (document.title == 'Bobiied') {
+            root.style.setProperty('--hero-image-background', 'url("../Images/bobiied2.png")')
+        } else {
+            root.style.setProperty('--hero-image-background', 'url("../Images/bobiied2.png")')
+        }
     } else {
         // Change to dark theme vars
         root.style.setProperty('--button-colour', '#61892f')
@@ -33,7 +37,11 @@ const onThemeUpdated = (theme) => {
         root.style.setProperty('--nav-test-colour', '#92b976')
         root.style.setProperty('--footer-colour', '#26282a')
         
-        root.style.setProperty('--hero-image-background', 'linear-gradient(var(--hero-image-top-gradient), var(--hero-image-bottom-gradient)), url("../Images/csharpbackground2.png")')
+        if (document.title == 'Bobiied') {
+            root.style.setProperty('--hero-image-background', 'linear-gradient(var(--hero-image-top-gradient), var(--hero-image-bottom-gradient)), url("../Images/bobiied2.png")')
+        } else {
+            root.style.setProperty('--hero-image-background', 'linear-gradient(var(--hero-image-top-gradient), var(--hero-image-bottom-gradient)), url("../Images/bobiied2.png")')
+        }
     }
     const rootElement = document.getElementById('root');
     rootElement.className = theme;
