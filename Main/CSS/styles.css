@@ -223,7 +223,7 @@ li a:hover {
 }
 
 /* Sets up the CPD table properties*/
-table {
+#cpd table {
     text-align: left;
     line-height: 2;
     border-spacing: 5px;
@@ -231,15 +231,28 @@ table {
     padding: 5px;
     border: none;
 }
-.b {
-    width: 50% !important; 
-}
-th, td {
+#cpd th, #cpd td {
     text-align: left;
     padding: 10px;
 }
 /* Adds the "zebra table" effect */
-tr:nth-child(odd) {
+#cpd tr:nth-child(odd) {
+    background-color: var(--table-zebra-colour);
+}
+
+#b table {
+    text-align: left;
+    line-height: 2;
+    border-spacing: 5px;
+    width: auto;
+    padding: 0px;
+    border: none;
+}
+#b th, #b td {
+    text-align: left;
+    padding: 10px;
+}
+#b tr:nth-child(odd) {
     background-color: var(--table-zebra-colour);
 }
 
