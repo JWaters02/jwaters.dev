@@ -19,7 +19,7 @@ const onThemeUpdated = (theme) => {
         if (document.title == 'Bobiied') {
             root.style.setProperty('--hero-image-background', 'url("../Images/bobiied2.png")')
         } else {
-            root.style.setProperty('--hero-image-background', 'url("../Images/csharpbackground2light.png")')
+            root.style.setProperty('--hero-image-background', 'url("../Images/websitebackgroundlight2.png")')
         }
     } else {
         // Change to dark theme vars
@@ -40,7 +40,7 @@ const onThemeUpdated = (theme) => {
         if (document.title == 'Bobiied') {
             root.style.setProperty('--hero-image-background', 'linear-gradient(var(--hero-image-top-gradient), var(--hero-image-bottom-gradient)), url("../Images/bobiied2.png")')
         } else {
-            root.style.setProperty('--hero-image-background', 'linear-gradient(var(--hero-image-top-gradient), var(--hero-image-bottom-gradient)), url("../Images/csharpbackground2.png")')
+            root.style.setProperty('--hero-image-background', 'linear-gradient(var(--hero-image-top-gradient), var(--hero-image-bottom-gradient)), url("../Images/websitebackground.png")')
         }
     }
     const rootElement = document.getElementById('root');

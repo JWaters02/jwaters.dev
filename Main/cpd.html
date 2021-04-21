@@ -24,12 +24,13 @@
             </div>
         </div>
         <!-- This is a page link for the navbar to link to, allows automatic scrolling to that element -->
-        <a id="cpd"></a>
+        <a id="cpd2"></a>
         <!-- Sets up nav bar to automatically scroll to elements on the page -->
         <div class="nav-bar">
             <ul>
-                <li class="float-left"><a href="#cpd">CPD Table</a></li>
-                <li class="float-left"><a href="#cpd-report">CPD Report</a></li>
+                <li class="float-left"><a href="#cpd2">T2/T3 CPD Table</a></li>
+                <li class="float-left"><a href="#cpd1">T1 CPD Table</a></li>
+                <li class="float-left"><a href="#cpd-report1">T1 CPD Report</a></li>
                 <li class="float-left"><a href="#bottom">Page Bottom</a></li>
                 <li class="float-right"><a class="theme-btn" onclick="toggleTheme()">Toggle Theme</a></li>
             </ul>
@@ -37,7 +38,24 @@
         <!-- Sets up the vertical flex container for each section -->
         <div class="flex-container-vertical">
             <div>
-                <h1>CPD Table</h1>
+                <h1>Term 2/3 CPD Table</h1>
+                <table id="cpd">
+                    <tr>
+                        <th>Activity Name</th>
+                        <th>Description</th>
+                        <th>Date(s) Attended</th>
+                        <th>Hours Gained</th>
+                    </tr>
+                    <tr>
+                        <td>DevSoc</td>
+                        <td>Became DevSoc comittee member (10+ hrs), created CTF for DevSoc (10+ hrs), MLH: Local Hack Day: Build event (3 hrs)</td>
+                        <td></td>
+                        <td>10</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h1>Term 1 CPD Table</h1>
                 <table id="cpd">
                     <tr>
                         <th>Activity Name</th>
@@ -79,7 +97,7 @@
             </div>
             <div>
                 <!-- This is a page link for the navbar to link to, allows automatic scrolling to that element -->
-                <a id="cpd-report"></a>
+                <a id="cpd-report1"></a>
                 <h1>CPD Report</h1>
                 <div class="display-block">
                     <div class="long-text">
