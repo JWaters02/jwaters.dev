@@ -2,7 +2,7 @@ const codeStrings = [
     `std::cout << "Hello World!";`,
     `Console.WriteLine("Hello World!");`,
     `print("Hello World!")`,
-    `console.log("Hello World!")`,
+    `console.log("Hello World!");`,
 ]
 
 function sleep(ms) {
