@@ -3,6 +3,13 @@ const codeStrings = [
     `Console.WriteLine("Hello World!");`,
     `print("Hello World!")`,
     `console.log("Hello World!");`,
+    `echo "Hello World!"`,
+    `puts("Hello World!")`,
+    `? "Hello World!"`,
+    `$("body").append("Hello World!");`,
+    `disp('Hello World!')`,
+    `cat('Hello World!')`,
+    `MsgBox "Hello World!"`,
 ]
 
 function sleep(ms) {
