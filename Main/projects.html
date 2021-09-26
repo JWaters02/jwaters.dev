@@ -23,17 +23,19 @@
             </div>
         </div>
         <!-- This is a page link for the navbar to link to, allows automatic scrolling to that element -->
-        <a id="aoc"></a>
+        <a id="drg-modding"></a>
         <!-- Sets up nav bar to automatically scroll to elements on the page -->
         <div class="nav-bar">
             <ul>
+                <li class="float-left"><a href="#drg-modding">DRG Modding</a></li>
+                <li class="float-left"><a href="#ue5">UE5 Scenes</a></li>
                 <li class="float-left"><a href="#aoc">AoC</a></li>
                 <li class="float-left"><a href="#backfire">Backfire</a></li>
                 <li class="float-left"><a href="#bes">BES</a></li>
                 <li class="float-left"><a href="#website">Website</a></li>
                 <li class="float-left"><a href="#haiku">Haiku</a></li>
                 <li class="float-left"><a href="#bobbybot">BobbyBot</a></li>
-                <!-- <li class="float-left"><a href="#bobbybot">AL Coursework</a></li> -->
+                <li class="float-left"><a href="#coursework">A-Level Coursework</a></li>
                 <li class="float-left"><a href="#bottom">Page Bottom</a></li>
                 <li class="float-right"><a class="theme-btn" onclick="toggleTheme()">Toggle Theme</a></li>
             </ul>
@@ -41,6 +43,65 @@
         <!-- Sets up the vertical flex container for each section -->
         <div class="flex-container-vertical">
             <div>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> Deep Rock Galactic Modding</h1>
+                <div ckass="display-block">
+                    <div class="long-text" style="line-height: 2; margin-right: 5px;">
+                        <h2></h2>
+                        <p>
+                            I am at the forefront of research and development of Unreal Engine modding for Deep Rock Galactic. I write documentation and guides for others to learn and follow the methods that I do and don't come up with.
+                            <br>
+                            <img src="./Images/Projects/DRG-Modding IYDRASYACH BP.png" alt="UE5-Scenes" style="width: 50%;">
+                            <br>
+                            The image above depicts the BluePrint for one of my mods, called IYDRASYACH (bit of a mouthful I know, but if you played the game you would get the reference). 
+                            <br>
+                            <br>
+                            I have created a few mods; audio and Blueprint are my two main methods that I play with. Sorry artists, but modelling isn't really my thing :P
+                            <br>
+                            If you go to DRG's modding portal page, <a class="link" href="https://drg.mod.io" target="_blank">mod.io</a>, and look for the mod author <b>Buckminsterfullerene</b> (me), you will see that I have a couple mods in the top 20 (as of writing this article).
+                            <br>
+                            <br>
+                            I am indirectly responsible for many of the audio and BluePrint mods for DRG because I created first the written <a class="link" href="https://github.com/DRG-Modding/Guides/tree/main/Audio%20Guide" target="_blank">audio</a> and <a class="link" href="https://github.com/DRG-Modding/Guides/tree/main/BP%20Guide" target="_blank">blueprint</a> modding guides, then the <a class="link" href="https://www.youtube.com/playlist?list=PLyexxYrpv6y2y1_tpHMr9CiBVJuY9GDm0" target="_blank">blueprint video tutorial series</a> guide.
+                            <br>
+                            From these guides, I think I have developed a very good skill of documentation - something that unlike most people, I really enjoy doing. Teaching and helping people is one of my passions, and this definately shows when helping other DRG modders.
+                            <br>
+                            <br>
+                            Here's the introduction video for my BP modding tutorial series:
+                            <br>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLyexxYrpv6y2y1_tpHMr9CiBVJuY9GDm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <br>
+                            <br>
+                            I have also developed a few tools for the DRG Modding scene, like helper scripts and a dumper for Reflected C++ Headers. These can be found on my <a class="link" href="https://github.com/Buckminsterfullerene02" target="_blank">alternate GitHub account</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a id="ue5"></a>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> Unreal Engine 5 Scenes</h1>
+                <div ckass="display-block">
+                    <div class="long-text" style="line-height: 2; margin-right: 5px;">
+                        <h2></h2>
+                        <p>
+                            I learned and tested the new Lumen and Nanite technology from UE5 by creating a beautiful Creek scene crafted using assets off Quixel Bridge.
+                            <br>
+                            <img src="./Images/Projects/UE5 Scene Window.png" alt="UE5-Scenes" style="width: 50%;">
+                            <br>
+                            These houses for example were built from individual assets on Quixel Bridge - the entire houses themselves were not taken. The bridge across the creek, for example, uses the window boarding for floor planks. 
+                            <br>
+                            <br>
+                            As I created this project not long after UE5 went out into beta, there were still a few bugs, like materials not instancing correctly. So I had to find work arounds to these problems using my (at the time) fairly limited knowledge of the engine.
+                            <br>
+                            <br>
+                            The fantastic thing I loved the most from creating this specific scene in UE5 is the realtime lighting change. You can hold Ctrl + L and use the mouse to move the sun in realtime! The shadows and the lighting changes exactly how you would expect it to change, without having to wait for any lighting to be baked at all!
+                            <br>
+                            <br>
+                            Another thing I love about UE5 is its new UI. It looks SO much better than UE4's UI, and the panels are a lot more responsive and easier to manage. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a id="aoc"></a>
                 <h1><i class="fa fa-code" aria-hidden="true"></i> Advent of Code 2020</h1>
                 <div ckass="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
@@ -219,18 +280,17 @@
                     </div>
                 </div>
             </div>
-            <!-- <div>
+            <div>
                 <a id="coursework"></a>
                 <h1><i class="fa fa-code" aria-hidden="true"></i> A-Level Coursework</h1>
                 <div ckass="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
-                        <h2></h2>
                         <p>
-                            
+                            An idle game developed in C# WinForms alongside a 65,000-word, 350-page report (Teacher grade: A*).
                         </p>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
         <!-- This is a page link for the navbar to link to, allows automatic scrolling to that element -->
         <a id="bottom"></a>
