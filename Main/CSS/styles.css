@@ -18,7 +18,7 @@
     --footer-colour: #26282a;
     --hero-image-top-gradient: rgba(0, 0, 0, 0.5); /* black-semi-transparent */
     --hero-image-bottom-gradient: rgba(0, 0, 0, 0.25); /* black-quarter-transparent */
-    --hero-button-hover: rgba(110, 110, 110, 0.25); /* half-black */
+    --hero-button-hover: rgba(45, 70, 38, 0.493); /* half-black */
 
     --hero-image-background: linear-gradient(var(--hero-image-top-gradient), var(--hero-image-bottom-gradient)), url("../Images/websitebackground.png");
 }
@@ -75,7 +75,7 @@ body, html {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     transition-duration: 0.4s;
 }
 /* Apply shadow when hovering over hero button */
@@ -85,6 +85,7 @@ body, html {
 /* Sets link of button to white */
 .hero-button-link {
     color: var(--button-text-colour);
+    text-decoration: none;
 }
 
 /* Sets up the nav bar used for auto-scrolling down the page */
@@ -349,9 +350,12 @@ li a:hover {
 .footer {
     width: 100%;
     background-color: var(--footer-colour);
-    color:var(--text-colour);
+    color: var(--text-colour);
     text-align: center;
     margin-top: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+a {
+    color: inherit;
 }
