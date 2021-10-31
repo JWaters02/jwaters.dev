@@ -246,6 +246,17 @@ li a:hover {
     }
 }
 
+/* Transparent image embed */
+.transparent-image {
+    background-color: #75b36f;
+}
+
+/* Blockquote embed */
+blockquote {
+    background-color: var(--background-colour);
+    padding: 20px;
+}
+
 /* YouTube embed size */
 .yt-embed {
     width: 560px;
@@ -255,7 +266,7 @@ li a:hover {
 @media (max-width: 600px) {
     /* Reduce the video embed size */
     .yt-embed {
-        width: 440px;
+        width: 410px;
     }
 }
 
