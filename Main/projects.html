@@ -27,19 +27,38 @@
         <!-- Sets up nav bar to automatically scroll to elements on the page -->
         <div class="nav-bar">
             <ul>
-                <li class="float-left"><a href="#drg-modding">DRG Modding</a></li>
+                <!-- <li class="float-left"><a href="#drg-modding">DRG Modding</a></li>
                 <li class="float-left"><a href="#ue5">UE5 Scenes</a></li>
+                <li class="float-left"><a href="#css">C++ SS</a></li>
                 <li class="float-left"><a href="#aoc">AoC</a></li>
                 <li class="float-left"><a href="#backfire">Backfire</a></li>
                 <li class="float-left"><a href="#bes">BES</a></li>
                 <li class="float-left"><a href="#website">Website</a></li>
                 <li class="float-left"><a href="#haiku">Haiku</a></li>
                 <li class="float-left"><a href="#bobbybot">BobbyBot</a></li>
-                <li class="float-left"><a href="#coursework">A-Level Coursework</a></li>
-                <li class="float-left"><a href="#bottom">Page Bottom</a></li>
+                <li class="float-left"><a href="#coursework">A-Level Coursework</a></li> -->
+
+                <li class="dropdown float-left">
+                    <a class="dropbtn">Select Project</a>
+                    <div class="dropdown-content">
+                        <a href="#drg-modding">DRG Modding</a>
+                        <a href="#ue5">UE5 Scenes</a>
+                        <a href="#css">C++ Shopper Sim</a>
+                        <a href="#aoc">AoC</a>
+                        <a href="#backfire">Backfire</a>
+                        <a href="#bes">BES</a>
+                        <a href="#website">Website</a>
+                        <a href="#haiku">Haiku</a>
+                        <a href="#bobbybot">BobbyBot</a>
+                        <a href="#coursework">A-Level CW</a>
+                    </div>
+                </li>
                 <li class="float-right"><a class="theme-btn" onclick="toggleTheme()">Toggle Theme</a></li>
+                <li class="float-right"><a href="#bottom">Page Bottom</a></li>
             </ul>
         </div>
+
+
         <!-- Sets up the vertical flex container for each section -->
         <div class="flex-container-vertical">
             <div>
@@ -101,8 +120,42 @@
                 </div>
             </div>
             <div>
+                <a id="css"></a>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> C++ Shopper Simulator</h1>
+                <div ckass="display-block">
+                    <div class="long-text" style="line-height: 2; margin-right: 5px;">
+                        <h2></h2>
+                        <p>
+                            I learned and tested the new Lumen and Nanite technology from UE5 by creating a beautiful Creek scene
+                            crafted using assets off Quixel Bridge.
+                            <br>
+                            <img src="./Images/Projects/UE5 Scene Window.png" alt="UE5-Scenes" style="width: 50%;">
+                            <br>
+                            These houses for example were built from individual assets on Quixel Bridge - the entire houses
+                            themselves were not taken. The bridge across the creek, for example, uses the window boarding for floor
+                            planks.
+                            <br>
+                            <br>
+                            As I created this project not long after UE5 went out into beta, there were still a few bugs, like
+                            materials not instancing correctly. So I had to find work arounds to these problems using my (at the
+                            time) fairly limited knowledge of the engine.
+                            <br>
+                            <br>
+                            The fantastic thing I loved the most from creating this specific scene in UE5 is the realtime lighting
+                            change. You can hold Ctrl + L and use the mouse to move the sun in realtime! The shadows and the
+                            lighting changes exactly how you would expect it to change, without having to wait for any lighting to
+                            be baked at all!
+                            <br>
+                            <br>
+                            Another thing I love about UE5 is its new UI. It looks SO much better than UE4's UI, and the panels are
+                            a lot more responsive and easier to manage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
                 <a id="aoc"></a>
-                <h1><i class="fa fa-code" aria-hidden="true"></i> Advent of Code 2020</h1>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> Advent of Code</h1>
                 <div ckass="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2>Advent of Code?</h2>
@@ -297,7 +350,7 @@
         <!-- Sets up nav bar to automatically scroll to the top of the page -->
         <div class="nav-bar">
             <ul>
-                <li class="float-left"><a href="#">Back to Top</a></li>
+                <li class="float-right"><a href="#">Back to Top</a></li>
             </ul>
         </div>
         <!-- Sets up footer part of page -->
@@ -312,7 +365,7 @@
             <p>Personal Email: watersjoshua2002@gmail.com<br>Student Email: N0916167@my.ntu.ac.uk</p>
         </div>
 
-        
+
         <script src="./Scripts/getTheme.js"></script>
     </body>
 </html>

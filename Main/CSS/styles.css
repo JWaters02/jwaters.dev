@@ -117,6 +117,42 @@ li a:hover {
     cursor: pointer;
 }
 
+/* Sets up dropdown for navbar */
+.dropbtn {
+    padding: 10px;
+    margin: 0px;
+    font-size: 20px;
+    overflow: visible;
+    background-color: var(--button-colour);
+}
+.dropdown {
+    position: relative;
+    display: inherit;
+}
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: var(--button-colour);
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: var(--button-text-colour);
+}
+.dropdown-content a:hover {
+    background-color: var(--nav-hover-colour);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: var(--nav-hover-colour);
+}
+
 /* Sets up the vertical flex container for about me section */
 .flex-container-vertical {
     display: flex;
