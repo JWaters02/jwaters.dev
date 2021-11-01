@@ -31,53 +31,112 @@
             <ul>
                 <li class="float-left"><a href="#about-me">About Me</a></li>
                 <li class="float-left"><a href="#projects">Projects</a></li>
-                <li class="float-left"><a href="#bottom">Page Bottom</a></li>
                 <li class="float-right"><a class="theme-btn" onclick="toggleTheme()">Toggle Theme</a></li>
+                <li class="float-right"><a href="#bottom">Page Bottom</a></li>
             </ul>
         </div>
         <!-- Sets up the vertical flex container for each section -->
         <div class="flex-container-vertical">
             <div>
                 <h1>About Me</h1>
-                <!-- Sets up the display block for a more interesting layout -->
-                <div class="display-block">
-                    <div class="education">
-                        <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i>Education</h2>
+                <div class="flex-container-horizontal">
+                    <div class="socials-column">
+                        <img src="./Images/king-edward-vi-school.jpg" alt="King Edward VI School" style="width: 100%;">
+                        <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
                         <h3><i class="fa fa-university" aria-hidden="true"></i> Nottingham Trent University</h3>
-                        <p>BSc Computer Science<br>2020 - 2024</p>
+                        <p>
+                            2020 - 2024
+                            <br>
+                            BSc (Hons) Computer Science SW, 2<sup>nd</sup> year; 1<sup>st</sup> year grade: 1<sup>st</sup>                            
+                        </p>
                         <h3><i class="fa fa-university" aria-hidden="true"></i> King Edward VI School Stratford upon Avon</h3>
                         <p>
-                            A-Levels<br>2018 - 2020<br>Extended Project Qualification(A), Computer Science(B), Geography(B), Mathematics(C)<br><br>GCSE<br>2015 - 2018<br>Top 8: Physics(8), Geography(8), Chemistry(7), Mathematics(7), Computer Science(7), Design Technology(7), Biology(6), Religious Studies(6), where 8 = A*, 7 = A, 6 = B
+                            <strong>A-Levels</strong>
+                            <br>
+                            2018 - 2020
+                            <br>
+                            Extended Project Qualification(A), Computer Science(B), Geography(B), Mathematics(C)
+                            <br>
+                            <br>
+                            <strong>GCSE</strong>
+                            <br>
+                            2015 - 2018
+                            <br>
+                            Top 8: Physics(8), Geography(8), Chemistry(7), Mathematics(7), Computer Science(7), Design
+                            Technology(7),
+                            Biology(6), Religious Studies(6), where 8 = A*, 7 = A, 6 = B
                         </p>
-                        <img src="./Images/king-edward-vi-school.jpg" alt="King Edward VI School" style="width: 50%;">
                     </div>
-                    <div class="experience">
-                        <h2>Experience <i class="fa fa-envelope" aria-hidden="true"></i>
-                        </h2>
-                        <h3>Shakespeare's Hospice Trust <i class="fa fa-briefcase" aria-hidden="true"></i></h3>
+                    <div class="socials-column">
+                        <!-- <img src="./Images/8klightingboard.JPG" alt="Lighting Board" style="width: 50%;"> -->
+                        <h2><i class="fa fa-envelope" aria-hidden="true"></i> Experience</h2>
+                        <h3><i class="fa fa-briefcase" aria-hidden="true"></i> NTU Developer's Society Committee</h3>
                         <p>
-                            2018 - 2019<br>Working in an office environment, at first doing odd-jobs like data entry and donation counting. Eventually I moved to automating all of the charity shops' income system into a central (Excel :-) ) database, using macros programmed in Visual Basic.
+                            2021 - Present
+                            <br>
+                            Obtained a leadership position within the <a class="link" href="https://devsoc.co.uk" target="_blank">NTU developers’ community</a> and now in charge of handling the management of events, and communications with external partners.
                         </p>
-                        <h3>Continued Progressional Development <i class="fa fa-briefcase" aria-hidden="true"></i></h3>
+                        <h3><i class="fa fa-briefcase" aria-hidden="true"></i> NTU Student Mentor</h3>
                         <p>
-                            2020 - 2021<br>Attending various extracurricular events and talks during university. <a class="link" href="cpd.html">View CPD tracking page.</a>
+                            Summer 2021 - Present
+                            <br>
+                            Supporting the first year students with their course and any problems they may have.
                         </p>
-                        <h3>Stratford upon Avon Guide Dogs <i class="fa fa-briefcase" aria-hidden="true"></i></h3>
+                        <h3><i class="fa fa-briefcase" aria-hidden="true"></i> Santander Work Experience</h3>
                         <p>
-                            2016 - 2017<br>Creating event posters.
+                            Summer 2021
+                            <br>
+                            Developed RShiny app in R that allows the UK Corporate Modelling Team to visualise and interact with publicly
+                            available macroeconomic data.
                         </p>
-                        <h3>School Student-lead Technical Crew <i class="fa fa-briefcase" aria-hidden="true"></i></h3>
+                        <h3><i class="fa fa-briefcase" aria-hidden="true"></i> Continued Professional Development</h3>
                         <p>
-                            2013 - 2019<br>Rigging the lighting and programming the lighting board & setting up sound board, in a professional manner, for school events. <a class="link" href="https://imgur.com/a/NWk8Mun" target="_blank">Some images of this.</a>
+                            2020 - 2021
+                            <br>
+                            Attending various extracurricular events and talks during university. <a class="link" href="cpd.html">View CPD tracking page</a>.
                         </p>
-                        <img src="./Images/8klightingboard.JPG" alt="Lighting Board" style="width: 50%;">
+                        <h3><i class="fa fa-briefcase" aria-hidden="true"></i> Shakespeare's Hospice Trust</h3>
+                        <p>
+                            2018 - 2019
+                            <br>
+                            Working in an office environment, at first doing odd-jobs like data entry and donation counting. Eventually I moved
+                            to automating all of the charity shops' income system into a central (Excel :-) ) database, using macros programmed
+                            in Visual Basic.
+                        </p>
+                        <!-- <h3><i class="fa fa-briefcase" aria-hidden="true"></i> Stratford upon Avon Guide Dogs</h3>
+                        <p>
+                            2016 - 2017
+                            <br>
+                            Creating event posters.
+                        </p> -->
+                        <!-- <h3><i class="fa fa-briefcase" aria-hidden="true"></i> School Student-lead Technical Crew</h3>
+                        <p>
+                            2013 - 2019
+                            <br>
+                            Rigging the lighting and programming the lighting board & setting up sound board, in a professional manner, for
+                            school events. <a class="link" href="https://imgur.com/a/NWk8Mun" target="_blank">Some images of this.</a>
+                        </p> -->
                     </div>
-                    <div class="interests">
+                    <div class="socials-column">
+                        <img class="align-bottom" src="./Images/3035887-factorio-banner-main.jpg" alt="Factorio Banner" style="width: 100%;">
                         <h2><i class="fa fa-code-fork" aria-hidden="true"></i> Interests</h2>
                         <p>
-                            Programming (C++, C#, Java, VB, Python, JavaScript) both for Academic & Personal Projects e.g. <a class="link" href="https://github.com/JWaters02/A-Level-Coursework" target="_blank">A-Level Coursework</a> or <a class="link" href="https://github.com/JWaters02/BobbyBot" target="_blank">Discord Bot in JS</a><br>Pentesting Labs<br>Taking part in & <a class="link" href="https://discord.gg/ZJcDrzD" target="_blank">making</a> Capture the Flag contests<br>Cryptography<br><a class="link" href="https://steamcommunity.com/profiles/76561198218076629/" target="_blank">Video Games</a><br><a class="link" href="https://imgur.com/a/C7HQ7ss" target="_blank">Building PCs</a><br>Reading<br>Tabletop Games<br>Sci-Fi<br>Walking<br>Cycling
+                            Programming (C++, C#, Java, VB, Python, JavaScript) both for Academic & Personal Projects e.g. <a class="link"
+                                href="https://github.com/JWaters02/A-Level-Coursework" target="_blank">A-Level Coursework</a> or <a class="link"
+                                href="https://github.com/JWaters02/BobbyBot" target="_blank">Discord Bot in JS</a>
+                            <br>
+                            Pentesting Labs<br>
+                            Unreal Engine<br>
+                            <a class="link" href="https://drg.mod.io" target="_blank">Deep Rock Galactic Modding</a><br>
+                            Taking part in & making Capture the Flag contests<br>
+                            Cryptography<br>
+                            <a class="link" href="https://steamcommunity.com/profiles/76561198218076629/" target="_blank">Video Games</a><br>
+                            <a class="link" href="https://imgur.com/a/C7HQ7ss" target="_blank">Building PCs</a><br>
+                            Reading<br>
+                            Tabletop Games<br>
+                            Sci-Fi<br>
+                            Cycling
                         </p>
-                        <img src="./Images/3035887-factorio-banner-main.jpg" alt="Factorio Banner" style="width: 50%;">
                     </div>
                 </div>
             </div>
@@ -160,13 +219,13 @@
                             <img class="demo cursor" src="./Images/Slideshow/JOOJ3-Character-Sheets-JS.png" style="width:100%" onclick="currentSlide(8)" alt="JOOJ3 (Custom D&D) Character Sheets">
                         </div>
                         <div class="column">
-                            <img class="demo cursor" src="./Images/Slideshow/Alevel-Project.png" style="width:100%" onclick="currentSlide(9)" alt="Alevel-Project">
+                            <img class="demo cursor" src="./Images/Slideshow/Alevel-Project.png" style="width:100%" onclick="currentSlide(9)" alt="A-Level Project">
                         </div>
                         <div class="column">
-                            <img class="demo cursor" src="./Images/Slideshow/UE5-Scenes.png" style="width:100%" onclick="currentSlide(10)" alt="UE5-Scenes">
+                            <img class="demo cursor" src="./Images/Slideshow/UE5-Scenes.png" style="width:100%" onclick="currentSlide(10)" alt="UE5 Scenes">
                         </div>
                         <div class="column">
-                            <img class="demo cursor" src="./Images/Slideshow/DRG-Modding-BP.png" style="width:100%" onclick="currentSlide(11)" alt="DRG-Modding-BP">
+                            <img class="demo cursor" src="./Images/Slideshow/DRG-Modding-BP.png" style="width:100%" onclick="currentSlide(11)" alt="DRG Modding">
                         </div>
                     </div>
                 </div>
@@ -177,7 +236,7 @@
         <!-- Sets up nav bar to automatically scroll to the top of the page -->
         <div class="nav-bar">
             <ul>
-                <li class="float-left"><a href="#">Back to Top</a></li>
+                <li class="float-right"><a href="#">Back to Top</a></li>
             </ul>
         </div>
         <!-- Sets up footer part of page -->

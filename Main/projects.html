@@ -27,24 +27,43 @@
         <!-- Sets up nav bar to automatically scroll to elements on the page -->
         <div class="nav-bar">
             <ul>
-                <li class="float-left"><a href="#drg-modding">DRG Modding</a></li>
+                <!-- <li class="float-left"><a href="#drg-modding">DRG Modding</a></li>
                 <li class="float-left"><a href="#ue5">UE5 Scenes</a></li>
+                <li class="float-left"><a href="#css">C++ SS</a></li>
                 <li class="float-left"><a href="#aoc">AoC</a></li>
                 <li class="float-left"><a href="#backfire">Backfire</a></li>
                 <li class="float-left"><a href="#bes">BES</a></li>
                 <li class="float-left"><a href="#website">Website</a></li>
                 <li class="float-left"><a href="#haiku">Haiku</a></li>
                 <li class="float-left"><a href="#bobbybot">BobbyBot</a></li>
-                <li class="float-left"><a href="#coursework">A-Level Coursework</a></li>
-                <li class="float-left"><a href="#bottom">Page Bottom</a></li>
+                <li class="float-left"><a href="#coursework">A-Level Coursework</a></li> -->
+
+                <li class="dropdown float-left">
+                    <a class="dropbtn">Select Project</a>
+                    <div class="dropdown-content">
+                        <a href="#drg-modding">DRG Modding</a>
+                        <a href="#ue5">UE5 Scenes</a>
+                        <a href="#css">C++ Shopper Sim</a>
+                        <a href="#aoc">AoC</a>
+                        <a href="#backfire">Backfire</a>
+                        <a href="#bes">BES</a>
+                        <a href="#website">Website</a>
+                        <a href="#haiku">Haiku</a>
+                        <a href="#bobbybot">BobbyBot</a>
+                        <a href="#coursework">A-Level CW</a>
+                    </div>
+                </li>
                 <li class="float-right"><a class="theme-btn" onclick="toggleTheme()">Toggle Theme</a></li>
+                <li class="float-right"><a href="#bottom">Page Bottom</a></li>
             </ul>
         </div>
+
+
         <!-- Sets up the vertical flex container for each section -->
         <div class="flex-container-vertical">
             <div>
                 <h1><i class="fa fa-code" aria-hidden="true"></i> Deep Rock Galactic Modding</h1>
-                <div ckass="display-block">
+                <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2></h2>
                         <p>
@@ -67,7 +86,7 @@
                             <br>
                             Here's the introduction video for my BP modding tutorial series:
                             <br>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLyexxYrpv6y2y1_tpHMr9CiBVJuY9GDm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="yt-embed" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLyexxYrpv6y2y1_tpHMr9CiBVJuY9GDm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <br>
                             <br>
                             I have also developed a few tools for the DRG Modding scene, like helper scripts and a dumper for Reflected C++ Headers. These can be found on my <a class="link" href="https://github.com/Buckminsterfullerene02" target="_blank">alternate GitHub account</a>.
@@ -78,7 +97,7 @@
             <div>
                 <a id="ue5"></a>
                 <h1><i class="fa fa-code" aria-hidden="true"></i> Unreal Engine 5 Scenes</h1>
-                <div ckass="display-block">
+                <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2></h2>
                         <p>
@@ -101,9 +120,79 @@
                 </div>
             </div>
             <div>
+                <a id="css"></a>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> C++ Contactless Shopper Simulator</h1>
+                <div class="display-block">
+                    <div class="long-text" style="line-height: 2; margin-right: 5px;">
+                        <h2>What does it do?</h2>
+                        <p>
+                            This is a prototype of an Object-Oriented program that simulates a contactless store, with individual shoppers, stocks, and items. Through a modular commands system, it allows the user to add as many sims as they like, and in turn as many shoppers inside selected sims as they wish. Each simulation has its own isolated stocks, which the shoppers interact with. The user can order stocks to specific simulations, remove simulations and shoppers, show specific simulation or
+                            shopper information, and save & load simulations to external files. Because of the modularity of the commands system, new commands and features can easily be added to the program.
+                            <br>
+                            <br>
+                            The original idea of the program was that it followed the same <a class="link" href="https://justwalkout.com" target="_blank">Just Walk Out</a> shopping model that Amazon has been developing with trial shops in London. These shops enables shoppers to enter a store, buy their items and just leave without physically paying. The idea is to eliminate the whole checkout lines part of shopping, which helps bring fast and convenient checkout experiences.
+                        </p>
+                        <h2>Design Considerations</h2>
+                        <p>
+                            When designing this program, I had a couple of problems to think about. Firstly, how would the simulations run and allow user input? There were a few possible methods:
+                            <ol>
+                                <li>Have the user enter either a command or nothing which then runs the simulation once. This was not great because it required user input and so could not be left to run on its own.</li>
+                                <li>The above option but use multi-threading to allow the user to inject commands whilst the simulation is running.</li>
+                                <li>The loop starts every x number of milliseconds and the user could press a key at any point which would stop the simulation and allow them to input their command.</li>
+                            </ol>
+                            I ended up using the third option because it was the most simple and elegant way of implementing it. The main event loop ended up looking like this:
+                            <br>
+                            <img src="./Images/Projects/CSS-MainLoop.png" alt="Main Event Loop" style="width: 50%;">
+                            <br>
+                            The next problem was how to create the commands system. What I started doing originally, was having a long if... else if... chain for every command. I would use the normal switch statement... but sadly C++ does not accept strings into it. Understandably, after adding 10 commands, it started to get tedious and I was making mistakes a lot. I needed to come up with a more robust way of doing it... So I replaced it with <i><strong>this:</strong></i>
+                            <br>
+                            <img src="./Images/Projects/CSS-Commands-ReWrite.png" alt="Commands Rewrite" style="width: 50%;">
+                            <br>
+                            But where are all of the commands now? The great fun that is, commandFunc! This god damn beauty of a vector stores the command as the first element of a pair, and as the second element, a function that the command carries out. This is how it looked:
+                            <br>
+                            <img src="./Images/Projects/CSS-CommandFunc.png" alt="CommandFunc" style="width: 50%;">
+                            <br>
+                            So now, whenever I wanted to add a new command, I could simply duplicate a line and edit the string and the function that it runs (and any parameters it may have)!
+                            <br>
+                            <br>
+                            Another fun challenge to work out was how I was going to store all of the simulations, the stocks and shoppers in them, and the items that each shopper had, all in a file. Now, I could have certainly used some form of JSON, but that's boring and I wanted to work out something myself.
+                            <br>
+                            <br>
+                            What I came up with, was my own spin on CSV (Comma Seperated Values) formatting. Since there were an unknown number of items/shoppers/simulations, I couldn't just seperate values with just one seperator. So what I did, was seperate each <i>type</i> of value with another form of seperator. Here's the main diagram showing how I planned on seperating out the data:
+                            <br>
+                            <img src="./Images/Projects/CSS-File-Structure.png" alt="File Structure" style="width: 50%;">
+                            <br>
+                            Here's how I used different delimiters to seperate each part:
+                            <ol>
+                                <li>To split up major data (i.e. the top table), use “#”</li>
+                                <li>To split up individual data (e.g. item name and item cost), use “,”</li>
+                                <li>To split up data that may come in varying amounts (e.g. items), use “+”</li>
+                                <li>To split up items that meet shoppers (i.e. when the items end and a new shopper begins), use “:”</li>
+                                <li>To split up shoppers and their items, use “~”</li>
+                            </ol>
+                            For example:
+                            <blockquote>
+                                Simulation ID,Paused?,money in account#Stock item name,Stock item cost,Stock number items#Shopper ID,Shopper name,Shopper age,Shopper weight,Shopper height,is shopper in store?~Item name,Item cost,Number of items
+                            </blockquote>
+                            Or:
+                            <blockquote>
+                                1,0,55.2#apple,4,23+banana,1,50#1,joshua,19,45,180,1~apple,1.2,3+banana,0.8,4:2,andy,21,55,175,1~watermelon,2.3,1
+                            </blockquote>
+                        </p>
+                        <h2>Class Layout</h2>
+                        <p>
+                            There were a fair few commands that I wanted to implement in order to properly show off what the prototype could do once the basics classes were implemented. It took me a while to think of everything I thought I needed at the time (a lot more features could then easily be added on top), but here's the class diagram showing the relationships and the commands I had in mind:
+                            <br>
+                            <img src="./Images/Projects/CSS-Class-Diagram.png" alt="Class Diagram" style="width: 50%;">
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
                 <a id="aoc"></a>
-                <h1><i class="fa fa-code" aria-hidden="true"></i> Advent of Code 2020</h1>
-                <div ckass="display-block">
+                <h1><i class="fa fa-code" aria-hidden="true"></i> Advent of Code</h1>
+                <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2>Advent of Code?</h2>
                         <p>
@@ -125,9 +214,9 @@
                         <p>
                             The Advent of Code 2019 event was based around saving Christmas in the Solar System. The first day story context setting reads:
                             <blockquote>
-                                "Santa has become stranded at the edge of the Solar System while delivering presents to other planets! To accurately calculate his position in space, safely align his warp drive, and return to Earth in time to save Christmas, he needs you to bring him measurements from fifty stars.
+                                Santa has become stranded at the edge of the Solar System while delivering presents to other planets! To accurately calculate his position in space, safely align his warp drive, and return to Earth in time to save Christmas, he needs you to bring him measurements from fifty stars.
                                 Collect stars by solving puzzles. Two puzzles will be made available on each day in the Advent calendar; the second puzzle is unlocked when you complete the first. Each puzzle grants one star. Good luck!
-                                The Elves quickly load you into a spacecraft and prepare to launch."
+                                The Elves quickly load you into a spacecraft and prepare to launch.
                             </blockquote>
                             This sets the scene of the event quite nicely, as the story is of course very important throughout the event.
                             <br>
@@ -162,7 +251,7 @@
             <div>
                 <a id="backfire"></a>
                 <h1><i class="fa fa-gamepad" aria-hidden="true"></i> GMTK2020 - Backfire</h1>
-                <div ckass="display-block">
+                <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2>GMTK?</h2>
                         <p>
@@ -192,7 +281,7 @@
             <div>
                 <a id="bes"></a>
                 <h1><i class="fa fa-code" aria-hidden="true"></i> Boolean Expression Simplifier</h1>
-                <div ckass="display-block">
+                <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2>What is this for?</h2>
                         <p>
@@ -223,7 +312,7 @@
             <div>
                 <a id="website"></a>
                 <h1><i class="fa fa-code" aria-hidden="true"></i> My Personal Website</h1>
-                <div ckass="display-block">
+                <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2>This Website?</h2>
                         <p>
@@ -237,7 +326,7 @@
             <div>
                 <a id="haiku"></a>
                 <h1><i class="fa fa-code" aria-hidden="true"></i> Haiku Generator</h1>
-                <div ckass="display-block">
+                <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2>What is a Haiku?</h2>
                         <p>
@@ -257,7 +346,7 @@
             <div>
                 <a id="bobbybot"></a>
                 <h1><i class="fa fa-code" aria-hidden="true"></i> BobbyBot</h1>
-                <div ckass="display-block">
+                <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2>What is BobbyBot for?</h2>
                         <p>
@@ -283,7 +372,7 @@
             <div>
                 <a id="coursework"></a>
                 <h1><i class="fa fa-code" aria-hidden="true"></i> A-Level Coursework</h1>
-                <div ckass="display-block">
+                <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <p>
                             An idle game developed in C# WinForms alongside a 65,000-word, 350-page report (Teacher grade: A*).
@@ -297,7 +386,7 @@
         <!-- Sets up nav bar to automatically scroll to the top of the page -->
         <div class="nav-bar">
             <ul>
-                <li class="float-left"><a href="#">Back to Top</a></li>
+                <li class="float-right"><a href="#">Back to Top</a></li>
             </ul>
         </div>
         <!-- Sets up footer part of page -->
@@ -312,7 +401,7 @@
             <p>Personal Email: watersjoshua2002@gmail.com<br>Student Email: N0916167@my.ntu.ac.uk</p>
         </div>
 
-        
+
         <script src="./Scripts/getTheme.js"></script>
     </body>
 </html>

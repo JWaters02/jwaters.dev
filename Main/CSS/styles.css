@@ -65,7 +65,6 @@ body, html {
     transform: translate(-50%, -50%);
     color: var(--hero-text-colour);
 }
-
 /* Hero button styling */
 .hero-button {
     background-color: var(--button-colour);
@@ -117,6 +116,42 @@ li a:hover {
     cursor: pointer;
 }
 
+/* Sets up dropdown for navbar */
+.dropbtn {
+    padding: 10px;
+    margin: 0px;
+    font-size: 20px;
+    overflow: visible;
+    background-color: var(--button-colour);
+}
+.dropdown {
+    position: relative;
+    display: inherit;
+}
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: var(--button-colour);
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: var(--button-text-colour);
+}
+.dropdown-content a:hover {
+    background-color: var(--nav-hover-colour);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: var(--nav-hover-colour);
+}
+
 /* Sets up the vertical flex container for about me section */
 .flex-container-vertical {
     display: flex;
@@ -144,6 +179,10 @@ li a:hover {
     }
 }
 
+h3, h2 {
+    line-height: 15px;
+}
+
 /* Sets up display for about me/CPD Report sections */
 .display-block {
     display: block;
@@ -157,57 +196,48 @@ li a:hover {
     padding-left: 20px;
     padding-inline-end: 0%;
 }
-/* Sets up the floating alignment for each subsection */
-/* These are with about me section */
-.education {
-    text-align: left;
-    padding-left: 20px;
-    padding-inline-end: 30%;
-}
-.education img {
-    text-align: none; /* Overrides text-align in education class */
-    float: left;
-}
-.experience {
-    text-align: right;
-    padding-right: 20px;
-    padding-inline-start: 30%;
-}
-.experience img {
-    text-align: none; /* Overrides text-align in experience class */
-    float: right;
-}
+
 .link {
     color: var(--link-colour);
 }
-.interests {
-    text-align: left;
-    padding-left: 20px;
-    padding-inline-end: 30%;
-}
-/* These are CPD Report section */
+
 /* Sets up the flex container (horizontally) */
 .flex-container-horizontal {
     display: flex;
     flex-direction: row; 
     justify-content: center;
-    align-items: stretch;
+    
 }
 /* Sets alignment for each section of horizontal flex container*/
 .flex-container-horizontal > div {
     background-color: var(--flex-background-colour);
     width: 100%;
-    margin: 5px;
+    margin: 10px;
+    padding: 20px;
     text-align: center;
     color: var(--text-colour);
-    line-height: 75px;
+    line-height: 30px;
 }
 /* If the width of the page is too small*/
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
     /* Change the .flex-container-horizontal to .flex-container-vertical */
     .flex-container-horizontal {
         flex-direction: column;
     }
+    .flex-container-horizontal > div {
+        padding: 0px 0px 0px 0px;
+        margin: 0px;
+        margin-bottom: 20px !important;
+    }
+}
+.align-bottom {
+    align-self: flex-end !important;
+}
+
+/* Blockquote embed */
+blockquote {
+    background-color: var(--background-colour);
+    padding: 20px;
 }
 
 /* YouTube embed size */
@@ -219,7 +249,7 @@ li a:hover {
 @media (max-width: 600px) {
     /* Reduce the video embed size */
     .yt-embed {
-        width: 440px;
+        width: 410px;
     }
 }
 
@@ -259,10 +289,10 @@ li a:hover {
 
 /* Sets up the socials columns */
 .socials-column {
-    box-shadow: 0 1px 1px 0 var(--border-colour), 0 1px 1px 0 var(--button-colour);
+    box-shadow: 0 1px 3px 0 var(--border-colour), 0 1px 1px 0 var(--button-colour);
 }
 .socials-column:hover{
-    box-shadow: 0 2px 3px 0 var(--border-colour), 0 5px 5px 0 var(--button-colour);
+    box-shadow: 0 2px 5px 0 var(--border-colour), 0 5px 5px 0 var(--button-colour);
 }
 .socials-column-link {
     color: var(--button-text-colour);
