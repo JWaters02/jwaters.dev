@@ -206,7 +206,6 @@ h3 {
     display: flex;
     flex-direction: row; 
     justify-content: center;
-    align-items: stretch;
 }
 /* Sets alignment for each section of horizontal flex container*/
 .flex-container-horizontal > div {
@@ -229,6 +228,9 @@ h3 {
         margin: 0px;
         margin-bottom: 20px !important;
     }
+}
+.align-bottom {
+    align-self: flex-end !important;
 }
 
 /* Blockquote embed */
