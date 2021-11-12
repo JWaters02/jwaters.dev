@@ -12,6 +12,7 @@ const onThemeUpdated = (theme) => {
         root.style.setProperty('--flex-background-colour', '#45641f')
         root.style.setProperty('--table-zebra-colour', '#354b1b')
         root.style.setProperty('--button-text-colour', '#fff')
+        root.style.setProperty('--blockquote-colour', '#26282a')
         root.style.setProperty('--nav-hover-colour', '#1b1e20')
         root.style.setProperty('--nav-test-colour', '#92b976')
         root.style.setProperty('--footer-colour', '#26282a')
@@ -33,6 +34,7 @@ const onThemeUpdated = (theme) => {
         root.style.setProperty('--flex-background-colour', '#26282a')
         root.style.setProperty('--table-zebra-colour', '#1b1e20')
         root.style.setProperty('--button-text-colour', '#fff')
+        root.style.setProperty('--blockquote-colour', '#1b1e20')
         root.style.setProperty('--nav-hover-colour', '#1b1e20')
         root.style.setProperty('--nav-test-colour', '#92b976')
         root.style.setProperty('--footer-colour', '#26282a')
@@ -60,7 +62,6 @@ const toggleTheme = () => {
     const updatedTheme = theme === 'dark' ? 
         'light' : 
         'dark';
-        
     updateTheme(updatedTheme);
 };
 

@@ -27,17 +27,6 @@
         <!-- Sets up nav bar to automatically scroll to elements on the page -->
         <div class="nav-bar">
             <ul>
-                <!-- <li class="float-left"><a href="#drg-modding">DRG Modding</a></li>
-                <li class="float-left"><a href="#ue5">UE5 Scenes</a></li>
-                <li class="float-left"><a href="#css">C++ SS</a></li>
-                <li class="float-left"><a href="#aoc">AoC</a></li>
-                <li class="float-left"><a href="#backfire">Backfire</a></li>
-                <li class="float-left"><a href="#bes">BES</a></li>
-                <li class="float-left"><a href="#website">Website</a></li>
-                <li class="float-left"><a href="#haiku">Haiku</a></li>
-                <li class="float-left"><a href="#bobbybot">BobbyBot</a></li>
-                <li class="float-left"><a href="#coursework">A-Level Coursework</a></li> -->
-
                 <li class="dropdown float-left">
                     <a class="dropbtn">Select Project</a>
                     <div class="dropdown-content">
@@ -58,20 +47,23 @@
             </ul>
         </div>
 
-
         <!-- Sets up the vertical flex container for each section -->
         <div class="flex-container-vertical">
             <div>
                 <h1><i class="fa fa-code" aria-hidden="true"></i> Deep Rock Galactic Modding</h1>
                 <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
-                        <h2></h2>
+                        <h2>What is Deep Rock Galactic?</h2>
+                        <p>
+                            Deep Rock Galactic is a 1-4 player sci-fi co-op shooter taking place in a procedurally generated and 100% destructible caves on an extremely hostile alien planet. You play as a team of badass dwarven space miners, out to complete missions for your corporate overlords and to collect as much gold, gems, and other precious minerals as you possibly can before you're overrun. To complete your tasks, you're equipped with a wide variety of severely hard-hitting weapons as well as a slew of hand gadgets. Set up turrets, call down supplies, build staircases up walls, or simply just drill your way to your objective - the choice is yours! The best bit about the game is that progression eventually comes down to beers and cosmetics!
+                        </p>
+                        <h2>Modding?</h2>
                         <p>
                             I am at the forefront of research and development of Unreal Engine modding for Deep Rock Galactic. I write documentation and guides for others to learn and follow the methods that I do and don't come up with.
                             <br>
-                            <img src="./Images/Projects/DRG-Modding IYDRASYACH BP.png" alt="UE5-Scenes" style="width: 50%;">
+                            <img src="./Images/Projects/DRG-Modding IYDRASYACH BP.png" alt="IYDRASYACH Mod BP" style="width: 50%;">
                             <br>
-                            The image above depicts the BluePrint for one of my mods, called IYDRASYACH (bit of a mouthful I know, but if you played the game you would get the reference). 
+                            The image above depicts the BluePrint for one of my mods, called IYDRASYACH (bit of a mouthful I know, but it's based off a voiceline in the game). 
                             <br>
                             <br>
                             I have created a few mods; audio and Blueprint are my two main methods that I play with. Sorry artists, but modelling isn't really my thing :P
@@ -88,8 +80,71 @@
                             <br>
                             <iframe class="yt-embed" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLyexxYrpv6y2y1_tpHMr9CiBVJuY9GDm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <br>
+                            This series is still ongoing and I have plans for a few more videos in the future.
                             <br>
-                            I have also developed a few tools for the DRG Modding scene, like helper scripts and a dumper for Reflected C++ Headers. These can be found on my <a class="link" href="https://github.com/Buckminsterfullerene02" target="_blank">alternate GitHub account</a>.
+                            <br>
+                            I have also developed a few tools for the DRG Modding scene, like helper scripts and modified a dumper for C++ reflected headers. These can be found on my <a class="link" href="https://github.com/Buckminsterfullerene02" target="_blank">alternate GitHub account</a>.
+                            <br>
+                            <br>
+                            My TODO list for the next few months is <i>very</i> long currently:
+                            <table id="todo-list">
+                                <tr>
+                                    <th>Guides</th>
+                                    <th>Mods</th>
+                                    <th>Tools</th>
+                                </tr>
+                                <tr>
+                                    <td>Write/record better packing/unpacking guide</td>
+                                    <td>Finish IYDRASYACH</td>
+                                    <td>Fix chat : 1 bug on modified dumper</td>
+                                </tr>
+                                <tr>
+                                    <td>Remove the BPMM legacy/alternate loading method from BP video and written guides</td>
+                                    <td>Fix IKS bug and implement DRGLib's DRG widgets for BTC</td>
+                                    <td>Work more on reflected dumps branch on modified dumper</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Chase up on people for BP modding tutorial series;
+                                        <ol>
+                                            <li>Cat for widgets segments</li>
+                                            <li>Video0 for custom level loading (without replacing existing levels)</li>
+                                            <li>Banagement/Gold on custom saves (or just do it myself)</li>
+                                            <li>Drillboy on RPC replication</li>
+                                            <li>Someone else (perhaps myself) on other general replication</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        Work on DJDwarves;
+                                        <ol>
+                                            <li>Work on loading songs into UE4 sound from file path using C++ wrapper</li>
+                                            <li>Fix inconsistancies with jukebox song extensions</li>
+                                            <li>Add timeline scrubbing</li>
+                                            <li>Add Spotify hook to C++ wrapper</li>
+                                        </ol>
+                                    </td>
+                                    <td>Fix writing to file C++ wrapper</td>
+                                </tr>
+                                <tr>
+                                    <td>Make video tutorial on C++ wrapper for BP mods</td>
+                                    <td>Fix MeatMorning Music Pak mod boss music and volume levels</td>
+                                    <td>Write FAQ Discord bot</td>
+                                </tr>
+                                <tr>
+                                    <td>Explain how dummying soundclasses work in audio guide</td>
+                                    <td>Work on 10x randomiser mod</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Port cp_orange to DRG level</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                            <br>
+                            Now, you might be wondering, what this C++ wrapper stuff is all about? Well, a friend of mine has created version 2 of his <a class="link" href="https://github.com/RussellJerome/UnrealModLoader" target="_blank">Unreal Mod Loader</a>, which is a program that will load blueprint mods for almost any UE4 game without much work other than making a profile for the game. New to this version, is the ability to write C++ wrappers for the mod blueprints. I should point out that due to the nature of BP modding, we are not able to write new C++ classes to support our blueprint mods because they simply would not be loaded by the game.
+                            <br>
+                            This is incredibly exciting for blueprint modders like myself because now we are not prevented by the limitations of blueprints. E.g. blueprints do not have the capability of file I/O, but now with the C++ wrapper, we can write a function that will read in a file and return a string. We will also be able to do stuff like stream music from an API like Spotify - or anything else that requires webhooks. This is a huge step forward for modders, and I am excited to see what the future holds.
                         </p>
                     </div>
                 </div>
@@ -115,6 +170,13 @@
                             <br>
                             <br>
                             Another thing I love about UE5 is its new UI. It looks SO much better than UE4's UI, and the panels are a lot more responsive and easier to manage. 
+                            <br>
+                            <br>
+                            Here's a couple of little demo recordings showing off the scene and the Lumen technology:
+                            <br>
+                            <iframe class="yt-embed" width="560" height="315" src="https://www.youtube.com/embed/I6NR6A_uukM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <br>
+                            <iframe class="yt-embed" width="560" height="315" src="https://www.youtube.com/embed/m6JXPu0zfVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </p>
                     </div>
                 </div>
@@ -376,6 +438,10 @@
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <p>
                             An idle game developed in C# WinForms alongside a 65,000-word, 350-page report (Teacher grade: A*).
+                            <br>
+                            This project is really, really long. I absolutely love writing documentation, as you can see from the length of the documentation.
+                            <br>
+                            You can find the project source code + documentation <a class="link" href="https://github.com/JWaters02/A-Level-Coursework" target="_blank">here</a>.
                         </p>
                     </div>
                 </div>

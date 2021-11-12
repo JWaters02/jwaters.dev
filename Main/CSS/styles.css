@@ -13,6 +13,7 @@
     --flex-background-colour: #26282a; /* gray | almost-white */ 
     --table-zebra-colour: #1b1e20;
     --button-text-colour: #fff; /* white | black */
+    --blockquote-colour: #1b1e20; /* almost-black | gray */
     --nav-hover-colour: #1b1e20;
     --nav-text-colour: #92b976;
     --footer-colour: #26282a;
@@ -236,7 +237,7 @@ h3, h2 {
 
 /* Blockquote embed */
 blockquote {
-    background-color: var(--background-colour);
+    background-color: var(--blockquote-colour);
     padding: 20px;
 }
 
@@ -284,6 +285,26 @@ blockquote {
     padding: 10px;
 }
 #b tr:nth-child(odd) {
+    background-color: var(--table-zebra-colour);
+}
+
+#todo-list table {
+    text-align: left;
+    line-height: 2;
+    border-spacing: 5px;
+    width: auto;
+    padding: 0px;
+    border: none;
+}
+#todo-list th {
+    text-align: center;
+    padding: 10px;
+}
+#todo-list td {
+    text-align: left;
+    padding: 10px;
+}
+#todo-list tr:nth-child(odd) {
     background-color: var(--table-zebra-colour);
 }
 
