@@ -22,24 +22,24 @@
                 </div>
             </div>
         </div>
-        <!-- This is a page link for the navbar to link to, allows automatic scrolling to that element -->
-        <a id="drg-modding"></a>
         <!-- Sets up nav bar to automatically scroll to elements on the page -->
         <div class="nav-bar">
             <ul>
                 <li class="dropdown float-left">
                     <a class="dropbtn">Select Project</a>
                     <div class="dropdown-content">
+                        <a href="#mainframe-modernisation">Mainframe Modernisation</a>
+                        <a href="#languages">Languages</a>
                         <a href="#drg-modding">DRG Modding</a>
-                        <a href="#ue5">UE5 Scenes</a>
                         <a href="#css">C++ Shopper Sim</a>
+                        <a href="#ue5">UE5 Scenes</a>
                         <a href="#aoc">AoC</a>
                         <a href="#backfire">Backfire</a>
                         <a href="#bes">BES</a>
                         <a href="#website">Website</a>
+                        <a href="#coursework">A-Level CW</a>
                         <a href="#haiku">Haiku</a>
                         <a href="#bobbybot">BobbyBot</a>
-                        <a href="#coursework">A-Level CW</a>
                     </div>
                 </li>
                 <li class="float-right"><a class="theme-btn" onclick="toggleTheme()">Toggle Theme</a></li>
@@ -50,140 +50,91 @@
         <!-- Sets up the vertical flex container for each section -->
         <div class="flex-container-vertical">
             <div>
-                <h1><i class="fa fa-code" aria-hidden="true"></i> Deep Rock Galactic Modding</h1>
+                <a id="mainframe-modernisation"></a>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> Mainframe Modernisation (2024 - Present)</h1>
                 <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
-                        <h2>What is Deep Rock Galactic?</h2>
                         <p>
-                            Deep Rock Galactic is a 1-4 player sci-fi co-op shooter taking place in a procedurally generated and 100% destructible caves on an extremely hostile alien planet. You play as a team of badass dwarven space miners, out to complete missions for your corporate overlords and to collect as much gold, gems, and other precious minerals as you possibly can before you're overrun. To complete your tasks, you're equipped with a wide variety of severely hard-hitting weapons as well as a slew of hand gadgets. Set up turrets, call down supplies, build staircases up walls, or simply just drill your way to your objective - the choice is yours! The best bit about the game is that progression eventually comes down to beers and cosmetics!
-                        </p>
-                        <h2>Modding?</h2>
-                        <p>
-                            I am at the forefront of research and development of Unreal Engine modding for Deep Rock Galactic. I write documentation and guides for others to learn and follow the methods that I do and don't come up with.
-                            <br>
-                            <img src="./Images/Projects/DRG-Modding IYDRASYACH BP.png" alt="IYDRASYACH Mod BP" style="width: 50%;">
-                            <br>
-                            The image above depicts the BluePrint for one of my mods, called IYDRASYACH (bit of a mouthful I know, but it's based off a voiceline in the game). 
-                            <br>
-                            <br>
-                            I have created a few mods; audio and Blueprint are my two main methods that I play with. Sorry artists, but modelling isn't really my thing :P
-                            <br>
-                            If you go to DRG's modding portal page, <a class="link" href="https://drg.mod.io" target="_blank">mod.io</a>, and look for the mod author <b>Buckminsterfullerene</b> (me), you will see that I have a couple mods in the top 20 (as of writing this article).
-                            <br>
-                            <br>
-                            I am indirectly responsible for many of the audio and BluePrint mods for DRG because I created first the written <a class="link" href="https://github.com/DRG-Modding/Guides/tree/main/Audio%20Guide" target="_blank">audio</a> and <a class="link" href="https://github.com/DRG-Modding/Guides/tree/main/BP%20Guide" target="_blank">blueprint</a> modding guides, then the <a class="link" href="https://www.youtube.com/playlist?list=PLyexxYrpv6y2y1_tpHMr9CiBVJuY9GDm0" target="_blank">blueprint video tutorial series</a> guide.
-                            <br>
-                            From these guides, I think I have developed a very good skill of documentation - something that unlike most people, I really enjoy doing. Teaching and helping people is one of my passions, and this definately shows when helping other DRG modders.
-                            <br>
-                            <br>
-                            Here's the introduction video for my BP modding tutorial series:
-                            <br>
-                            <iframe class="yt-embed" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLyexxYrpv6y2y1_tpHMr9CiBVJuY9GDm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <br>
-                            This series is still ongoing and I have plans for a few more videos in the future.
-                            <br>
-                            <br>
-                            I have also developed a few tools for the DRG Modding scene, like helper scripts and modified a dumper for C++ reflected headers. These can be found on my <a class="link" href="https://github.com/Buckminsterfullerene02" target="_blank">alternate GitHub account</a>.
-                            <br>
-                            <br>
-                            My TODO list for the next few months is <i>very</i> long currently:
-                            <table id="todo-list">
-                                <tr>
-                                    <th>Guides</th>
-                                    <th>Mods</th>
-                                    <th>Tools</th>
-                                </tr>
-                                <tr>
-                                    <td>Write/record better packing/unpacking guide</td>
-                                    <td>Finish IYDRASYACH</td>
-                                    <td>Fix chat : 1 bug on modified dumper</td>
-                                </tr>
-                                <tr>
-                                    <td>Remove the BPMM legacy/alternate loading method from BP video and written guides</td>
-                                    <td>Fix IKS bug and implement DRGLib's DRG widgets for BTC</td>
-                                    <td>Work more on reflected dumps branch on modified dumper</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Chase up on people for BP modding tutorial series;
-                                        <ol>
-                                            <li>Cat for widgets segments</li>
-                                            <li>Video0 for custom level loading (without replacing existing levels)</li>
-                                            <li>Banagement/Gold on custom saves (or just do it myself)</li>
-                                            <li>Drillboy on RPC replication</li>
-                                            <li>Someone else (perhaps myself) on other general replication</li>
-                                        </ol>
-                                    </td>
-                                    <td>
-                                        Work on DJDwarves;
-                                        <ol>
-                                            <li>Work on loading songs into UE4 sound from file path using C++ wrapper</li>
-                                            <li>Fix inconsistancies with jukebox song extensions</li>
-                                            <li>Add timeline scrubbing</li>
-                                            <li>Add Spotify hook to C++ wrapper</li>
-                                        </ol>
-                                    </td>
-                                    <td>Fix writing to file C++ wrapper</td>
-                                </tr>
-                                <tr>
-                                    <td>Make video tutorial on C++ wrapper for BP mods</td>
-                                    <td>Fix MeatMorning Music Pak mod boss music and volume levels</td>
-                                    <td>Write FAQ Discord bot</td>
-                                </tr>
-                                <tr>
-                                    <td>Explain how dummying soundclasses work in audio guide</td>
-                                    <td>Work on 10x randomiser mod</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Port cp_orange to DRG level</td>
-                                    <td></td>
-                                </tr>
-                            </table>
-                            <br>
-                            Now, you might be wondering, what this C++ wrapper stuff is all about? Well, a friend of mine has created version 2 of his <a class="link" href="https://github.com/RussellJerome/UnrealModLoader" target="_blank">Unreal Mod Loader</a>, which is a program that will load blueprint mods for almost any UE4 game without much work other than making a profile for the game. New to this version, is the ability to write C++ wrappers for the mod blueprints. I should point out that due to the nature of BP modding, we are not able to write new C++ classes to support our blueprint mods because they simply would not be loaded by the game.
-                            <br>
-                            This is incredibly exciting for blueprint modders like myself because now we are not prevented by the limitations of blueprints. E.g. blueprints do not have the capability of file I/O, but now with the C++ wrapper, we can write a function that will read in a file and return a string. We will also be able to do stuff like stream music from an API like Spotify - or anything else that requires webhooks. This is a huge step forward for modders, and I am excited to see what the future holds.
+                            My spare time outside project work is mostly spent doing a mix of things (I like to do 5 things at once and switch between them throughout the day because ADHD I guess):
+                            <ol>
+                                <li>Maintaining my vscode extension which sits on zowe explorer and provides some internal developer tools to vscode (to try to remove as much reliance on the terminal as possible</li>
+                                <li>Troubleshooting with devs endless problems with zowe explorer (it's just tricky to setup, there are lots of versions that have ups and downs, people are on old versions that don't work well and don't see the messages telling them to update, etc etc)</li>
+                                <li>Doing poc's on some technology we haven't used before but would like to but no one else has time to look into</li>
+                                <li>Light development on Zowe Explorer/Zowe CLI i.e. docs changes, testing builds and attending the dev standups (actual development is done in my free time outside of work as I'm not paid to work on it)</li>
+                                <li>Working on my automation stuff if I am making changes to the batch and CICS COBOL programs that it runs for</li>
+                            </ol>
                         </p>
                     </div>
                 </div>
             </div>
             <div>
-                <a id="ue5"></a>
-                <h1><i class="fa fa-code" aria-hidden="true"></i> Unreal Engine 5 Scenes</h1>
+                <a id="languages"></a>
+                <h1><i class="fa fa-language" aria-hidden="true"></i> Language Learning (2022 - Present)</h1>
                 <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
-                        <h2></h2>
                         <p>
-                            I learned and tested the new Lumen and Nanite technology from UE5 by creating a beautiful Creek scene crafted using assets off Quixel Bridge.
-                            <br>
-                            <img src="./Images/Projects/UE5 Scene Window.png" alt="UE5-Scenes" style="width: 50%;">
-                            <br>
-                            These houses for example were built from individual assets on Quixel Bridge - the entire houses themselves were not taken. The bridge across the creek, for example, uses the window boarding for floor planks. 
-                            <br>
-                            <br>
-                            As I created this project not long after UE5 went out into beta, there were still a few bugs, like materials not instancing correctly. So I had to find work arounds to these problems using my (at the time) fairly limited knowledge of the engine.
-                            <br>
-                            <br>
-                            The fantastic thing I loved the most from creating this specific scene in UE5 is the realtime lighting change. You can hold Ctrl + L and use the mouse to move the sun in realtime! The shadows and the lighting changes exactly how you would expect it to change, without having to wait for any lighting to be baked at all!
-                            <br>
-                            <br>
-                            Another thing I love about UE5 is its new UI. It looks SO much better than UE4's UI, and the panels are a lot more responsive and easier to manage. 
-                            <br>
-                            <br>
-                            Here's a couple of little demo recordings showing off the scene and the Lumen technology:
-                            <br>
-                            <iframe class="yt-embed" width="560" height="315" src="https://www.youtube.com/embed/I6NR6A_uukM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <br>
-                            <iframe class="yt-embed" width="560" height="315" src="https://www.youtube.com/embed/m6JXPu0zfVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            In 2022 I wanted to learn a new language, so I tried Dutch for a few months but lost motivation quickly as I didn't like how it sounded.
+                            I decided to learn a completely different language than English, so I thought about Mandarin. I tried it for a couple of months but the pronunciation was too hard.
+                            So I tried Korean, having seen a Youtube video about how the alphabet is easy to learn. I learnt the alphabet in a couple of weeks and that motivated me to keep learning.
+                            As a result, I become engrossed in Korean culture and met a lot of really awesome Koreans who I met up with on my visit to Korea in 2024.
+                            As of summer 2025, my Korean language skills are roughly at the start of the intermediate level, where I can hold basic Korean conversations.
+                            In 2023 I met my partner who is Chinese and thus I started to learn Mandarin. This is also why I have visited China several times.
                         </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a id="drg-modding"></a>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> Deep Rock Galactic Modding (2021 - 2024)</h1>
+                <div class="display-block">
+                    <div class="long-text" style="line-height: 2;">
+                        <h2>What is Deep Rock Galactic?</h2>
+                        <p>
+                            Deep Rock Galactic is a 1-4 player sci-fi co-op shooter taking place in a procedurally generated and 100% destructible caves on an extremely hostile alien planet. You play as a team of badass dwarven space miners, out to complete missions for your corporate overlords and to collect as much gold, gems, and other precious minerals as you possibly can before you're overrun by hordes of enemies. To complete your tasks, you're equipped with a wide variety of severely hard-hitting weapons as well as a slew of hand gadgets. Set up turrets, call down supplies, build staircases up walls, or simply just drill your way to your objective - the choice is yours! The best bit about the game is that progression eventually comes down to beers and cosmetics!
+                        </p>
+                        <h2>Modding?</h2>
+                        <p>
+                            I was at the forefront of research and development of Unreal Engine modding for Deep Rock Galactic. I wrote documentation and guides for others to learn and follow the modding methods.
+                            <br>
+                            <img src="./Images/Projects/DRG-Modding IYDRASYACH BP.png" alt="IYDRASYACH Mod BP" style="width: 50%;">
+                            <br>
+                            The image above depicts the Blueprint for one of my mods, called IYDRASYACH (bit of a mouthful I know, but it's based off a voiceline in the game). 
+                            <br>
+                            <br>
+                            I am indirectly responsible for many of the audio and Blueprint mods for DRG because I created first the written <a class="link" href="https://drg.mod.io/guides/drg-mods-a-comprehensive-guide-to-audio-modding" target="_blank">audio</a> and <a class="link" href="https://drg.mod.io/guides/how-to-blueprint-mod" target="_blank">blueprint</a> modding guides, then the <a class="link" href="https://www.youtube.com/playlist?list=PLyexxYrpv6y2y1_tpHMr9CiBVJuY9GDm0" target="_blank">blueprint video tutorial series</a> guide.
+                            <br>
+                            From these guides, I think I have developed a very good skill of documentation - something that unlike most people, I really enjoy doing. Teaching and helping people is one of my passions, and this definately shows when helping other DRG modders.
+                            <br>
+                            <br>
+                            I have also developed a few tools for the DRG Modding scene, like helper scripts and modified a dumper for C++ reflected headers. These can be found on my <a class="link" href="https://github.com/DRG-Modding" target="_blank">alternate GitHub account</a>.
+                            <br>
+                            <br>
+                        </p>
+                        <h2><a class="link" href="https://mod.io/g/drg/u/buckminsterfullerene" target="_blank">My DRG mods</a></h2>
+                        <!-- <p>
+                            I have created a few mods; audio and Blueprint are my two main methods that I play with. Sorry artists, but modelling isn't really my thing :P
+                            <br>
+                            If you go to DRG's modding portal page, <a class="link" href="https://drg.mod.io" target="_blank">mod.io</a>, and look for the mod author <b>Buckminsterfullerene</b> (me), you will see that I have a few mods, despite focusing mainly on modding tools. Here's three of my mods:
+                            <br>
+                            <div class="flex-container-horizontal">
+                                <div class="socials-column">
+                                    <iframe width="100%" height="315" src="https://drg.mod.io/pickaxe-bonk-sfx/widget" frameborder="0"></iframe><br><a href="https://drg.mod.io/pickaxe-bonk-sfx">Pickaxe Bonk! SFX mod - mod.io</a>
+                                </div>
+                                <div class="socials-column">
+                                    <iframe width="100%" height="315" src="https://drg.mod.io/lootbug-purr/widget" frameborder="0"></iframe><br><a href="https://drg.mod.io/lootbug-purr">Lootbug Purr mod - mod.io</a>
+                                </div>
+                                <div class="socials-column">
+                                    <iframe width="560" height="315" src="https://drg.mod.io/lights-out/widget" frameborder="0"></iframe><br><a href="https://drg.mod.io/lights-out">Lights Out mod - mod.io</a>
+                                </div>
+                            </div>
+                            <br>
+                        </p> -->
                     </div>
                 </div>
             </div>
             <div>
                 <a id="css"></a>
-                <h1><i class="fa fa-code" aria-hidden="true"></i> C++ Contactless Shopper Simulator</h1>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> C++ Contactless Shopper Simulator (2021)</h1>
                 <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2>What does it do?</h2>
@@ -252,8 +203,40 @@
                 </div>
             </div>
             <div>
+                <a id="ue5"></a>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> Unreal Engine 5 Scenes (2020)</h1>
+                <div class="display-block">
+                    <div class="long-text" style="line-height: 2; margin-right: 5px;">
+                        <h2></h2>
+                        <p>
+                            I learned and tested the new Lumen and Nanite technology from UE5 by creating a beautiful Creek scene crafted using assets off Quixel Bridge.
+                            <br>
+                            <img src="./Images/Projects/UE5 Scene Window.png" alt="UE5-Scenes" style="width: 50%;">
+                            <br>
+                            These houses for example were built from individual assets on Quixel Bridge - the entire houses themselves were not taken. The bridge across the creek, for example, uses the window boarding for floor planks. 
+                            <br>
+                            <br>
+                            As I created this project not long after UE5 went out into beta, there were still a few bugs, like materials not instancing correctly. So I had to find work arounds to these problems using my (at the time) fairly limited knowledge of the engine.
+                            <br>
+                            <br>
+                            The fantastic thing I loved the most from creating this specific scene in UE5 is the realtime lighting change. You can hold Ctrl + L and use the mouse to move the sun in realtime! The shadows and the lighting changes exactly how you would expect it to change, without having to wait for any lighting to be baked at all!
+                            <br>
+                            <br>
+                            Another thing I love about UE5 is its new UI. It looks SO much better than UE4's UI, and the panels are a lot more responsive and easier to manage. 
+                            <br>
+                            <br>
+                            Here's a couple of little demo recordings showing off the scene and the Lumen technology:
+                            <br>
+                            <iframe class="yt-embed" width="560" height="315" src="https://www.youtube.com/embed/I6NR6A_uukM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <br>
+                            <iframe class="yt-embed" width="560" height="315" src="https://www.youtube.com/embed/m6JXPu0zfVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
                 <a id="aoc"></a>
-                <h1><i class="fa fa-code" aria-hidden="true"></i> Advent of Code</h1>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> Advent of Code (2019 - 2023)</h1>
                 <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2>Advent of Code?</h2>
@@ -307,6 +290,24 @@
                             <br>
                             The puzzles were definitley much easier than in 2019, only being actually difficult for about 5 different puzzles. On top of this, Day 25 (usually the most difficult problem of the event) was incredibly anticlimatic because it took me about 20 minutes to complete and ended up being a very short 4 liner solution. 
                         </p>
+                        <h2>AoC 2021</h2>
+                        <p>
+                            <strong><a class="link" href="https://github.com/Buckminsterfullerene02/AoC-2021" target="_blank">My technical writeup on Github</a></strong>
+                            <br>
+                            <br>
+                            This year I did my puzzles in Python first, then in Unreal Engine blueprint as I wanted to learn how to code in blueprints better, for the modding stuff I was doing above.
+                            Although blueprints are not really meant for performant coding (as we will see), it was still really fun to make it!
+                            <br>
+                            <br>
+                            I finished all 25 days again this year but waking up at 5am every day for puzzle start was the last time I ever did it and it took a serious toll on my sanity!
+                            <br>
+                            <br>
+                            Anyway here is my results table:
+                            <br>
+                            <br>
+                            <img src="./Images/Projects/AoC Stats 2021.png" alt="AoC Stats 2021" style="width: 50%;">
+                            <br>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -342,7 +343,7 @@
             </div>
             <div>
                 <a id="bes"></a>
-                <h1><i class="fa fa-code" aria-hidden="true"></i> Boolean Expression Simplifier</h1>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> Boolean Expression Simplifier (2020)</h1>
                 <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2>What is this for?</h2>
@@ -373,7 +374,7 @@
             </div>
             <div>
                 <a id="website"></a>
-                <h1><i class="fa fa-code" aria-hidden="true"></i> My Personal Website</h1>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> My Personal Website (2020)</h1>
                 <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2>This Website?</h2>
@@ -386,8 +387,23 @@
                 </div>
             </div>
             <div>
+                <a id="coursework"></a>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> A-Level Coursework (2019)</h1>
+                <div class="display-block">
+                    <div class="long-text" style="line-height: 2; margin-right: 5px;">
+                        <p>
+                            An idle game developed in C# WinForms alongside a 65,000-word, 350-page report (Teacher grade: A*).
+                            <br>
+                            This project is really, really long. I absolutely love writing documentation, as you can see from the length of the documentation.
+                            <br>
+                            You can find the project source code + documentation <a class="link" href="https://github.com/JWaters02/A-Level-Coursework" target="_blank">here</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
                 <a id="haiku"></a>
-                <h1><i class="fa fa-code" aria-hidden="true"></i> Haiku Generator</h1>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> Haiku Generator (2018)</h1>
                 <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2>What is a Haiku?</h2>
@@ -407,7 +423,7 @@
             </div>
             <div>
                 <a id="bobbybot"></a>
-                <h1><i class="fa fa-code" aria-hidden="true"></i> BobbyBot</h1>
+                <h1><i class="fa fa-code" aria-hidden="true"></i> BobbyBot (2018)</h1>
                 <div class="display-block">
                     <div class="long-text" style="line-height: 2; margin-right: 5px;">
                         <h2>What is BobbyBot for?</h2>
@@ -431,21 +447,6 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <a id="coursework"></a>
-                <h1><i class="fa fa-code" aria-hidden="true"></i> A-Level Coursework</h1>
-                <div class="display-block">
-                    <div class="long-text" style="line-height: 2; margin-right: 5px;">
-                        <p>
-                            An idle game developed in C# WinForms alongside a 65,000-word, 350-page report (Teacher grade: A*).
-                            <br>
-                            This project is really, really long. I absolutely love writing documentation, as you can see from the length of the documentation.
-                            <br>
-                            You can find the project source code + documentation <a class="link" href="https://github.com/JWaters02/A-Level-Coursework" target="_blank">here</a>.
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- This is a page link for the navbar to link to, allows automatic scrolling to that element -->
         <a id="bottom"></a>
@@ -459,15 +460,10 @@
         <div class="footer">
             <h1>
                 <a class="fa fa-github-square fa-2x" aria-hidden="true" href="https://github.com/JWaters02" target="_blank"></a>
-                <a class="fa fa-linux fa-2x" aria-hidden="true" href="https://app.hackthebox.eu/profile/413135"
-                    target="_blank"></a>
-                <a class="fa fa-linkedin-square fa-2x" aria-hidden="true" href="https://linkedin.com/in/jwaters02/"
-                    target="_blank"></a>
+                <a class="fa fa-linkedin-square fa-2x" aria-hidden="true" href="https://linkedin.com/in/jwaters02/" target="_blank"></a>
             </h1>
-            <p>Personal Email: watersjoshua2002@gmail.com<br>Student Email: N0916167@my.ntu.ac.uk</p>
+            <p>Personal Email: watersjoshua2002@gmail.com</p>
         </div>
-
-
         <script src="./Scripts/getTheme.js"></script>
     </body>
 </html>
