@@ -164,7 +164,7 @@ li a:hover {
 /* Sets alignment for each section of vertical flex container*/
 .flex-container-vertical > div {
     background-color: var(--flex-background-colour);
-    width: 100%;
+    width: 90%;
     margin: 10px;
     text-align: center;
     color: var(--text-colour);
@@ -208,7 +208,6 @@ h3, h2 {
     display: flex;
     flex-direction: row; 
     justify-content: center;
-    
 }
 /* Sets alignment for each section of horizontal flex container*/
 .flex-container-horizontal > div {
@@ -220,6 +219,7 @@ h3, h2 {
     color: var(--text-colour);
     line-height: 30px;
 }
+
 /* If the width of the page is too small*/
 @media (max-width: 1000px) {
     /* Change the .flex-container-horizontal to .flex-container-vertical */
@@ -232,6 +232,7 @@ h3, h2 {
         margin-bottom: 20px !important;
     }
 }
+
 .align-bottom {
     align-self: flex-end !important;
 }
